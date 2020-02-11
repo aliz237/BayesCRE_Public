@@ -767,10 +767,6 @@ gibbsSampler = function(chain, sim.num, burn.in, iter.num, p.c, p.a, p.m,
           }
         }
         i.pc.log.ch.probs = i.pc.log.ch.probs + log(ch.p)
-        i.pc.logX = log(i.pc.prior.probs) + i.pc.log.ch.probs
-        i.pc.probs = c(1 / (1 + exp(i.pc.logX[2] - i.pc.logX[1]) + exp(i.pc.logX[3] - i.pc.logX[1])),
-                       1 / (1 + exp(i.pc.logX[1] - i.pc.logX[2]) + exp(i.pc.logX[3] - i.pc.logX[2])),
-                       1 / (1 + exp(i.pc.logX[1] - i.pc.logX[3]) + exp(i.pc.logX[2] - i.pc.logX[3])))
       }
 
      
