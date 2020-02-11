@@ -1,0 +1,961 @@
+uid	regulation	name	id	type	prob	correct	incorrect	zero	score
+10024	-1	DYSF	8291	Protein	1.19405e-309	2	5	48	-3
+10024	0	DYSF	8291	Protein	1	0	0	0	0
+10024	1	DYSF	8291	Protein	1.32985e-309	5	2	48	3
+10066	-1	RXR Family		Protein	1.19426e-309	0	1	2	-1
+10066	0	RXR Family		Protein	1	0	0	0	0
+10066	1	RXR Family		Protein	1.33007e-309	1	0	2	1
+10151	-1	paclitaxel		Compound	1.19447e-309	2	0	3	2
+10151	0	paclitaxel		Compound	1	0	0	0	0
+10151	1	paclitaxel		Compound	1.33028e-309	0	2	3	-2
+10177	-1	SFTPA1	653509	Protein	1	0	1	8	-1
+10177	0	SFTPA1	653509	Protein	1.26259e-309	0	0	0	0
+10177	1	SFTPA1	653509	Protein	1.33049e-309	1	0	8	1
+10185	-1	glucocorticoid	24261	Compound	1	7	6	30	1
+10185	0	glucocorticoid	24261	Compound	1.2628e-309	0	0	0	0
+10185	1	glucocorticoid	24261	Compound	1.3307e-309	6	7	30	-1
+10199	-1	S100A6	6277	Protein	1.19511e-309	0	2	3	-2
+10199	0	S100A6	6277	Protein	1	0	0	0	0
+10199	1	S100A6	6277	Protein	1.33092e-309	2	0	3	2
+10235	-1	zebularine	46938	Compound	1.19532e-309	1	0	0	1
+10235	0	zebularine	46938	Compound	1.26322e-309	0	0	0	0
+10235	1	zebularine	46938	Compound	1	0	1	0	-1
+10282	-1	Adrb Family		Protein	1.19553e-309	1	1	9	0
+10282	0	Adrb Family		Protein	1	0	0	0	0
+10282	1	Adrb Family		Protein	1.33134e-309	1	1	9	0
+10310	-1	INS	3630	Protein	1.19574e-309	0	1	22	-1
+10310	0	INS	3630	Protein	1	0	0	0	0
+10310	1	INS	3630	Protein	1.33155e-309	1	0	22	1
+1035	-1	LOC680208	680208	Protein	1.15903e-309	1	1	0	0
+1035	0	LOC680208	680208	Protein	1	0	0	0	0
+1035	1	LOC680208	680208	Protein	1.29484e-309	1	1	0	0
+10382	-1	S1PR1	1901	Protein	1.19596e-309	1	0	1	1
+10382	0	S1PR1	1901	Protein	1	0	0	0	0
+10382	1	S1PR1	1901	Protein	1.33176e-309	0	1	1	-1
+10427	-1	hyaluronic acid	16336	Compound	1.19617e-309	1	2	31	-1
+10427	0	hyaluronic acid	16336	Compound	1	0	0	0	0
+10427	1	hyaluronic acid	16336	Compound	1.33198e-309	2	1	31	1
+10447	-1	MEF2C	4208	Protein	1.19638e-309	1	1	32	0
+10447	0	MEF2C	4208	Protein	1	0	0	0	0
+10447	1	MEF2C	4208	Protein	1.33219e-309	1	1	32	0
+10522	-1	Interferon		Compound	1.19659e-309	1	0	2	1
+10522	0	Interferon		Compound	1.2645e-309	0	0	0	0
+10522	1	Interferon		Compound	1	0	1	2	-1
+10558	-1	polyunsaturated fatty acid	26208	Compound	1.19681e-309	0	1	2	-1
+10558	0	polyunsaturated fatty acid	26208	Compound	1	0	0	0	0
+10558	1	polyunsaturated fatty acid	26208	Compound	1.33261e-309	1	0	2	1
+1057	-1	serum insulin		Compound	1.15925e-309	4	10	134	-6
+1057	0	serum insulin		Compound	1	0	0	0	0
+1057	1	serum insulin		Compound	1.29505e-309	10	4	134	6
+10652	-1	Iloprost		Compound	1.19702e-309	5	6	5	-1
+10652	0	Iloprost		Compound	1	0	0	0	0
+10652	1	Iloprost		Compound	1.33283e-309	6	5	5	1
+10769	-1	bexarotene	50859	Compound	1.19723e-309	0	1	5	-1
+10769	0	bexarotene	50859	Compound	1	0	0	0	0
+10769	1	bexarotene	50859	Compound	1.33304e-309	1	0	5	1
+10792	-1	cholesterol	16113	Compound	1.19744e-309	0	4	15	-4
+10792	0	cholesterol	16113	Compound	1	0	0	0	0
+10792	1	cholesterol	16113	Compound	1.33325e-309	4	0	15	4
+10822	-1	Tretinoin		Compound	1.19765e-309	8	2	63	6
+10822	0	Tretinoin		Compound	1	0	0	0	0
+10822	1	Tretinoin		Compound	1.33346e-309	2	8	63	-6
+10831	-1	gemcitabine	175901	Compound	1.19787e-309	2	0	25	2
+10831	0	gemcitabine	175901	Compound	1	0	0	0	0
+10831	1	gemcitabine	175901	Compound	1.33367e-309	0	2	25	-2
+1086	-1	FOXD3	27022	Protein	1.15946e-309	0	1	4	-1
+1086	0	FOXD3	27022	Protein	1	0	0	0	0
+1086	1	FOXD3	27022	Protein	1.29527e-309	1	0	4	1
+10887	-1	NOTCH Family		Protein	1.19808e-309	0	1	13	-1
+10887	0	NOTCH Family		Protein	1	0	0	0	0
+10887	1	NOTCH Family		Protein	1.33389e-309	1	0	13	1
+10944	-1	GATA6	2627	Protein	1.19829e-309	2	0	6	2
+10944	0	GATA6	2627	Protein	1	0	0	0	0
+10944	1	GATA6	2627	Protein	1.3341e-309	0	2	6	-2
+10962	-1	OSR1	130497	Protein	1.1985e-309	1	0	0	1
+10962	0	OSR1	130497	Protein	1	0	0	0	0
+10962	1	OSR1	130497	Protein	1.33431e-309	0	1	0	-1
+11061	-1	raloxifene	8772	Compound	1.19872e-309	2	2	6	0
+11061	0	raloxifene	8772	Compound	1	0	0	0	0
+11061	1	raloxifene	8772	Compound	1.33452e-309	2	2	6	0
+1117	-1	HRAS	3265	Protein	1.15967e-309	18	82	19	-64
+1117	0	HRAS	3265	Protein	1.22757e-309	0	0	0	0
+1117	1	HRAS	3265	Protein	1	82	18	19	64
+11185	-1	CD437		Compound	1.19893e-309	6	2	9	4
+11185	0	CD437		Compound	1.26683e-309	0	0	0	0
+11185	1	CD437		Compound	1	2	6	9	-4
+11217	-1	ETS Family		Protein	1.19914e-309	0	1	3	-1
+11217	0	ETS Family		Protein	1.26704e-309	0	0	0	0
+11217	1	ETS Family		Protein	1	1	0	3	1
+11230	-1	MEIS1	4211	Protein	1.19935e-309	0	3	7	-3
+11230	0	MEIS1	4211	Protein	1	0	0	0	0
+11230	1	MEIS1	4211	Protein	1.33516e-309	3	0	7	3
+11263	-1	gefitinib	49668	Compound	1.19956e-309	7	5	170	2
+11263	0	gefitinib	49668	Compound	1	0	0	0	0
+11263	1	gefitinib	49668	Compound	1.33537e-309	5	7	170	-2
+11300	-1	Sirolimus		Compound	1.19978e-309	3	2	21	1
+11300	0	Sirolimus		Compound	1	0	0	0	0
+11300	1	Sirolimus		Compound	1.33558e-309	2	3	21	-1
+11415	-1	GH1	2688	Protein	1.19999e-309	1	3	10	-2
+11415	0	GH1	2688	Protein	1	0	0	0	0
+11415	1	GH1	2688	Protein	1.3358e-309	3	1	10	2
+11446	-1	DLX5	1749	Protein	1.2002e-309	0	1	4	-1
+11446	0	DLX5	1749	Protein	1	0	0	0	0
+11446	1	DLX5	1749	Protein	1.33601e-309	1	0	4	1
+1149	-1	histamine	18295	Compound	1.15988e-309	2	0	7	2
+1149	0	histamine	18295	Compound	1	0	0	0	0
+1149	1	histamine	18295	Compound	1.29569e-309	0	2	7	-2
+11528	-1	rosiglitazone	50122	Compound	1.20041e-309	3	3	16	0
+11528	0	rosiglitazone	50122	Compound	1	0	0	0	0
+11528	1	rosiglitazone	50122	Compound	1.33622e-309	3	3	16	0
+11613	-1	KLF7	8609	Protein	1.20063e-309	0	1	8	-1
+11613	0	KLF7	8609	Protein	1	0	0	0	0
+11613	1	KLF7	8609	Protein	1.33643e-309	1	0	8	1
+11616	-1	Flavopiridol		Compound	1.20084e-309	1	0	4	1
+11616	0	Flavopiridol		Compound	1	0	0	0	0
+11616	1	Flavopiridol		Compound	1.33665e-309	0	1	4	-1
+11668	-1	lovastatin	40303	Compound	1.20105e-309	2	3	5	-1
+11668	0	lovastatin	40303	Compound	1	0	0	0	0
+11668	1	lovastatin	40303	Compound	1.33686e-309	3	2	5	1
+11708	-1	Ras Family		Protein	1.20126e-309	0	2	23	-2
+11708	0	Ras Family		Protein	1	0	0	0	0
+11708	1	Ras Family		Protein	1.33707e-309	2	0	23	2
+1177	-1	Helicobacter pylori infection		Compound	1.1601e-309	3	1	93	2
+1177	0	Helicobacter pylori infection		Compound	1	0	0	0	0
+1177	1	Helicobacter pylori infection		Compound	1.2959e-309	1	3	93	-2
+11801	-1	POU4F1	5457	Protein	1.20147e-309	0	3	3	-3
+11801	0	POU4F1	5457	Protein	1	0	0	0	0
+11801	1	POU4F1	5457	Protein	1.33728e-309	3	0	3	3
+11885	-1	troglitazone	9753	Compound	1.20169e-309	3	2	21	1
+11885	0	troglitazone	9753	Compound	1	0	0	0	0
+11885	1	troglitazone	9753	Compound	1.33749e-309	2	3	21	-1
+11974	-1	BATF	10538	Protein	1.2019e-309	1	0	5	1
+11974	0	BATF	10538	Protein	1	0	0	0	0
+11974	1	BATF	10538	Protein	1.33771e-309	0	1	5	-1
+12076	-1	leukotriene B4	15647	Compound	1.20211e-309	0	2	12	-2
+12076	0	leukotriene B4	15647	Compound	1	0	0	0	0
+12076	1	leukotriene B4	15647	Compound	1.33792e-309	2	0	12	2
+1219	-1	Adenosine triphosphate		Compound	1.16031e-309	1	2	4	-1
+1219	0	Adenosine triphosphate		Compound	1	0	0	0	0
+1219	1	Adenosine triphosphate		Compound	1.29612e-309	2	1	4	1
+12217	-1	cisplatin	27899	Compound	1	3	1	49	2
+12217	0	cisplatin	27899	Compound	1.27023e-309	0	0	0	0
+12217	1	cisplatin	27899	Compound	1.33813e-309	1	3	49	-2
+12337	-1	Akt Family		Protein	1.20254e-309	0	3	11	-3
+12337	0	Akt Family		Protein	1	0	0	0	0
+12337	1	Akt Family		Protein	1.33834e-309	3	0	11	3
+12338	-1	FOXF2	2295	Protein	1.20275e-309	1	0	10	1
+12338	0	FOXF2	2295	Protein	1	0	0	0	0
+12338	1	FOXF2	2295	Protein	1.33855e-309	0	1	10	-1
+12444	-1	BACH1	571	Protein	1.20296e-309	1	0	6	1
+12444	0	BACH1	571	Protein	1	0	0	0	0
+12444	1	BACH1	571	Protein	1.33877e-309	0	1	6	-1
+12503	-1	Mapk Erk Family		Protein	1.20317e-309	1	1	3	0
+12503	0	Mapk Erk Family		Protein	1	0	0	0	0
+12503	1	Mapk Erk Family		Protein	1.33898e-309	1	1	3	0
+12517	-1	Stat5 Family		Protein	1.20338e-309	0	1	5	-1
+12517	0	Stat5 Family		Protein	1	0	0	0	0
+12517	1	Stat5 Family		Protein	1.33919e-309	1	0	5	1
+12631	-1	NFYB	4801	Protein	1.2036e-309	1	0	2	1
+12631	0	NFYB	4801	Protein	1	0	0	0	0
+12631	1	NFYB	4801	Protein	1.3394e-309	0	1	2	-1
+12658	-1	Pravastatin		Compound	1.20381e-309	3	5	0	-2
+12658	0	Pravastatin		Compound	1	0	0	0	0
+12658	1	Pravastatin		Compound	1.33962e-309	5	3	0	2
+12729	-1	cytokine		Compound	1.20402e-309	1	1	0	0
+12729	0	cytokine		Compound	1	0	0	0	0
+12729	1	cytokine		Compound	1.33983e-309	1	1	0	0
+12773	-1	MLXIPL	51085	Protein	1.20423e-309	1	0	2	1
+12773	0	MLXIPL	51085	Protein	1.27214e-309	0	0	0	0
+12773	1	MLXIPL	51085	Protein	1	0	1	2	-1
+12808	-1	Prka Family		Protein	1	0	1	10	-1
+12808	0	Prka Family		Protein	1.27235e-309	0	0	0	0
+12808	1	Prka Family		Protein	1.34025e-309	1	0	10	1
+1294	-1	KAT5	10524	Protein	1.16052e-309	1	0	4	1
+1294	0	KAT5	10524	Protein	1	0	0	0	0
+1294	1	KAT5	10524	Protein	1.29633e-309	0	1	4	-1
+12953	-1	histone deacetylase inhibitor	61115	Compound	1.20466e-309	0	1	10	-1
+12953	0	histone deacetylase inhibitor	61115	Compound	1	0	0	0	0
+12953	1	histone deacetylase inhibitor	61115	Compound	1.34046e-309	1	0	10	1
+12958	-1	SALL4	57167	Protein	1.20487e-309	1	0	1	1
+12958	0	SALL4	57167	Protein	1	0	0	0	0
+12958	1	SALL4	57167	Protein	1.34068e-309	0	1	1	-1
+13020	-1	PLAGL2	5326	Protein	1.20508e-309	1	0	3	1
+13020	0	PLAGL2	5326	Protein	1.27299e-309	0	0	0	0
+13020	1	PLAGL2	5326	Protein	1	0	1	3	-1
+13097	-1	Wnt Family		Protein	1.20529e-309	0	1	11	-1
+13097	0	Wnt Family		Protein	1	0	0	0	0
+13097	1	Wnt Family		Protein	1.3411e-309	1	0	11	1
+13190	-1	THRSP	7069	Protein	1.20551e-309	1	0	0	1
+13190	0	THRSP	7069	Protein	1	0	0	0	0
+13190	1	THRSP	7069	Protein	1.34131e-309	0	1	0	-1
+13217	-1	omeprazole	7772	Compound	1.20572e-309	1	3	0	-2
+13217	0	omeprazole	7772	Compound	1	0	0	0	0
+13217	1	omeprazole	7772	Compound	1.34153e-309	3	1	0	2
+13242	-1	NFIX	4784	Protein	1.20593e-309	1	1	3	0
+13242	0	NFIX	4784	Protein	1	0	0	0	0
+13242	1	NFIX	4784	Protein	1.34174e-309	1	1	3	0
+13313	-1	Nkx2-1	21869	Protein	1.20614e-309	0	4	96	-4
+13313	0	Nkx2-1	21869	Protein	1	0	0	0	0
+13313	1	Nkx2-1	21869	Protein	1.34195e-309	4	0	96	4
+13331	-1	CSDA	8531	Protein	1.20635e-309	1	0	4	1
+13331	0	CSDA	8531	Protein	1	0	0	0	0
+13331	1	CSDA	8531	Protein	1.34216e-309	0	1	4	-1
+13450	-1	FLI1	2313	Protein	1.20657e-309	1	1	4	0
+13450	0	FLI1	2313	Protein	1	0	0	0	0
+13450	1	FLI1	2313	Protein	1.34237e-309	1	1	4	0
+13549	-1	HBP1	26959	Protein	1.20678e-309	1	1	13	0
+13549	0	HBP1	26959	Protein	1	0	0	0	0
+13549	1	HBP1	26959	Protein	1.34259e-309	1	1	13	0
+13589	-1	SP5	389058	Protein	1.20699e-309	4	2	81	2
+13589	0	SP5	389058	Protein	1	0	0	0	0
+13589	1	SP5	389058	Protein	1.3428e-309	2	4	81	-2
+136	-1	IFN1@	3438	Protein	3.4634e-310	1	1	56	0
+136	0	IFN1@	3438	Protein	1	0	0	0	0
+136	1	IFN1@	3438	Protein	1.28954e-309	1	1	56	0
+13711	-1	paricalcitol	7931	Compound	1.2072e-309	0	1	0	-1
+13711	0	paricalcitol	7931	Compound	1	0	0	0	0
+13711	1	paricalcitol	7931	Compound	1.34301e-309	1	0	0	1
+1375	-1	Norepinephrine		Compound	1.16073e-309	0	1	22	-1
+1375	0	Norepinephrine		Compound	1.22864e-309	0	0	0	0
+1375	1	Norepinephrine		Compound	1	1	0	22	1
+13816	-1	FOXL1	2300	Protein	1.20742e-309	1	0	8	1
+13816	0	FOXL1	2300	Protein	1	0	0	0	0
+13816	1	FOXL1	2300	Protein	1.34322e-309	0	1	8	-1
+13872	-1	nitric oxide	16480	Compound	1.20763e-309	5	10	32	-5
+13872	0	nitric oxide	16480	Compound	1	0	0	0	0
+13872	1	nitric oxide	16480	Compound	1.34344e-309	10	5	32	5
+13928	-1	HOXC6	3223	Protein	1.20784e-309	2	0	30	2
+13928	0	HOXC6	3223	Protein	1	0	0	0	0
+13928	1	HOXC6	3223	Protein	1.34365e-309	0	2	30	-2
+14052	-1	NANOG	79923	Protein	1.20805e-309	1	3	1	-2
+14052	0	NANOG	79923	Protein	1	0	0	0	0
+14052	1	NANOG	79923	Protein	1.34386e-309	3	1	1	2
+14058	-1	NRF1	4899	Protein	1.20826e-309	2	3	11	-1
+14058	0	NRF1	4899	Protein	1	0	0	0	0
+14058	1	NRF1	4899	Protein	1.34407e-309	3	2	11	1
+14086	-1	NKX2-5	1482	Protein	1.20848e-309	1	0	8	1
+14086	0	NKX2-5	1482	Protein	1	0	0	0	0
+14086	1	NKX2-5	1482	Protein	1.34428e-309	0	1	8	-1
+14096	-1	testosterone	17347	Compound	1.20869e-309	2	3	6	-1
+14096	0	testosterone	17347	Compound	1	0	0	0	0
+14096	1	testosterone	17347	Compound	1.3445e-309	3	2	6	1
+1417	-1	ZBTB17	7709	Protein	1.16094e-309	0	1	11	-1
+1417	0	ZBTB17	7709	Protein	1	0	0	0	0
+1417	1	ZBTB17	7709	Protein	1.29675e-309	1	0	11	1
+14288	-1	HES7	84667	Protein	1.2089e-309	0	1	0	-1
+14288	0	HES7	84667	Protein	1	0	0	0	0
+14288	1	HES7	84667	Protein	1.34471e-309	1	0	0	1
+14290	-1	RFX5	5993	Protein	1.20911e-309	0	1	2	-1
+14290	0	RFX5	5993	Protein	1	0	0	0	0
+14290	1	RFX5	5993	Protein	1.34492e-309	1	0	2	1
+14357	-1	MEF2 Family		Protein	1.20933e-309	0	1	13	-1
+14357	0	MEF2 Family		Protein	1	0	0	0	0
+14357	1	MEF2 Family		Protein	1.34513e-309	1	0	13	1
+14375	-1	NFAT Family		Protein	1.20954e-309	1	1	7	0
+14375	0	NFAT Family		Protein	1	0	0	0	0
+14375	1	NFAT Family		Protein	1.34535e-309	1	1	7	0
+14399	-1	BRD2	6046	Protein	1.20975e-309	1	0	0	1
+14399	0	BRD2	6046	Protein	1.27765e-309	0	0	0	0
+14399	1	BRD2	6046	Protein	1	0	1	0	-1
+1441	-1	ADRB Family		Protein	1.16116e-309	0	2	1	-2
+1441	0	ADRB Family		Protein	1	0	0	0	0
+1441	1	ADRB Family		Protein	1.29696e-309	2	0	1	2
+14413	-1	biotin	15956	Compound	1.20996e-309	0	1	0	-1
+14413	0	biotin	15956	Compound	1	0	0	0	0
+14413	1	biotin	15956	Compound	1.34577e-309	1	0	0	1
+14466	-1	simvastatin	9150	Compound	1.21017e-309	2	6	5	-4
+14466	0	simvastatin	9150	Compound	1	0	0	0	0
+14466	1	simvastatin	9150	Compound	1.34598e-309	6	2	5	4
+14507	-1	GCM1	8521	Protein	1	1	1	1	0
+14507	0	GCM1	8521	Protein	1.27829e-309	0	0	0	0
+14507	1	GCM1	8521	Protein	1.34619e-309	1	1	1	0
+14555	-1	SPI1	6688	Protein	1.2106e-309	1	0	18	1
+14555	0	SPI1	6688	Protein	1	0	0	0	0
+14555	1	SPI1	6688	Protein	1.34641e-309	0	1	18	-1
+14612	-1	ZHX2	22882	Protein	1.21081e-309	1	0	10	1
+14612	0	ZHX2	22882	Protein	1	0	0	0	0
+14612	1	ZHX2	22882	Protein	1.34662e-309	0	1	10	-1
+1466	-1	Cyclic GMP		Compound	1.16137e-309	0	4	2	-4
+1466	0	Cyclic GMP		Compound	1	0	0	0	0
+1466	1	Cyclic GMP		Compound	1.29718e-309	4	0	2	4
+14717	-1	Oxidized High Density LipoProtein		Compound	1.21102e-309	1	3	3	-2
+14717	0	Oxidized High Density LipoProtein		Compound	1	0	0	0	0
+14717	1	Oxidized High Density LipoProtein		Compound	1.34683e-309	3	1	3	2
+14722	-1	Epinephrine		Compound	1.21124e-309	2	0	17	2
+14722	0	Epinephrine		Compound	1	0	0	0	0
+14722	1	Epinephrine		Compound	1.34704e-309	0	2	17	-2
+14762	-1	NTF4	4909	Protein	1	1	0	1	1
+14762	0	NTF4	4909	Protein	1.27935e-309	0	0	0	0
+14762	1	NTF4	4909	Protein	1.34726e-309	0	1	1	-1
+14805	-1	IKBK/CHUK Family		Protein	1.21166e-309	1	0	0	1
+14805	0	IKBK/CHUK Family		Protein	1	0	0	0	0
+14805	1	IKBK/CHUK Family		Protein	1.34747e-309	0	1	0	-1
+14819	-1	HOXA13	3209	Protein	1.21187e-309	2	2	71	0
+14819	0	HOXA13	3209	Protein	1	0	0	0	0
+14819	1	HOXA13	3209	Protein	1.34768e-309	2	2	71	0
+149	-1	erlotinib	114785	Compound	3.4634e-310	3	2	1	1
+149	0	erlotinib	114785	Compound	1	0	0	0	0
+149	1	erlotinib	114785	Compound	1.28975e-309	2	3	1	-1
+14904	-1	MAP2K Family		Protein	1	0	3	13	-3
+14904	0	MAP2K Family		Protein	1.27999e-309	0	0	0	0
+14904	1	MAP2K Family		Protein	1.34789e-309	3	0	13	3
+14906	-1	FSH		Compound	1.2123e-309	1	2	2	-1
+14906	0	FSH		Compound	1	0	0	0	0
+14906	1	FSH		Compound	1.3481e-309	2	1	2	1
+14922	-1	Metribolone		Compound	1.21251e-309	0	2	1	-2
+14922	0	Metribolone		Compound	1	0	0	0	0
+14922	1	Metribolone		Compound	1.34832e-309	2	0	1	2
+14985	-1	FOXD3	27022	Protein	1.21272e-309	1	0	4	1
+14985	0	FOXD3	27022	Protein	1	0	0	0	0
+14985	1	FOXD3	27022	Protein	1.34853e-309	0	1	4	-1
+15016	-1	NOS1	4842	Protein	1.21293e-309	1	0	12	1
+15016	0	NOS1	4842	Protein	1	0	0	0	0
+15016	1	NOS1	4842	Protein	1.34874e-309	0	1	12	-1
+15138	-1	PKNOX1	5316	Protein	1.21314e-309	0	1	3	-1
+15138	0	PKNOX1	5316	Protein	1	0	0	0	0
+15138	1	PKNOX1	5316	Protein	1.34895e-309	1	0	3	1
+15218	-1	CDX1	1044	Protein	1.21336e-309	0	1	0	-1
+15218	0	CDX1	1044	Protein	1	0	0	0	0
+15218	1	CDX1	1044	Protein	1.34916e-309	1	0	0	1
+15257	-1	NEUROG3	50674	Protein	1.21357e-309	0	1	4	-1
+15257	0	NEUROG3	50674	Protein	1	0	0	0	0
+15257	1	NEUROG3	50674	Protein	1.34938e-309	1	0	4	1
+15456	-1	IRF5	3663	Protein	1.21378e-309	5	1	81	4
+15456	0	IRF5	3663	Protein	1	0	0	0	0
+15456	1	IRF5	3663	Protein	1.34959e-309	1	5	81	-4
+15466	-1	PLAG1	5324	Protein	1.21399e-309	0	1	30	-1
+15466	0	PLAG1	5324	Protein	1	0	0	0	0
+15466	1	PLAG1	5324	Protein	1.3498e-309	1	0	30	1
+15524	-1	SIX1	6495	Protein	1.21421e-309	1	0	4	1
+15524	0	SIX1	6495	Protein	1	0	0	0	0
+15524	1	SIX1	6495	Protein	1.35001e-309	0	1	4	-1
+15605	-1	Prkc Family		Protein	1.21442e-309	2	4	29	-2
+15605	0	Prkc Family		Protein	1	0	0	0	0
+15605	1	Prkc Family		Protein	1.35023e-309	4	2	29	2
+15606	-1	GK	2710	Protein	1.21463e-309	2	1	0	1
+15606	0	GK	2710	Protein	1	0	0	0	0
+15606	1	GK	2710	Protein	1.35044e-309	1	2	0	-1
+15618	-1	estradiol	23965	Compound	1.21484e-309	8	6	77	2
+15618	0	estradiol	23965	Compound	1	0	0	0	0
+15618	1	estradiol	23965	Compound	1.35065e-309	6	8	77	-2
+1567	-1	Nutlin 3		Compound	1.16158e-309	7	4	4	3
+1567	0	Nutlin 3		Compound	1	0	0	0	0
+1567	1	Nutlin 3		Compound	1.29739e-309	4	7	4	-3
+15679	-1	DBP	1628	Protein	1.21505e-309	1	1	1	0
+15679	0	DBP	1628	Protein	1	0	0	0	0
+15679	1	DBP	1628	Protein	1.35086e-309	1	1	1	0
+15696	-1	KAT5	10524	Protein	1.21527e-309	0	1	3	-1
+15696	0	KAT5	10524	Protein	1	0	0	0	0
+15696	1	KAT5	10524	Protein	1.35107e-309	1	0	3	1
+1573	-1	Lithium		Compound	1.16179e-309	0	1	3	-1
+1573	0	Lithium		Compound	1	0	0	0	0
+1573	1	Lithium		Compound	1.2976e-309	1	0	3	1
+15757	-1	MLL	4297	Protein	1.21548e-309	1	0	1	1
+15757	0	MLL	4297	Protein	1	0	0	0	0
+15757	1	MLL	4297	Protein	1.35129e-309	0	1	1	-1
+15767	-1	oxandrolone	7820	Compound	1.21569e-309	1	1	0	0
+15767	0	oxandrolone	7820	Compound	1	0	0	0	0
+15767	1	oxandrolone	7820	Compound	1.3515e-309	1	1	0	0
+15788	-1	HOXA9	3205	Protein	1.2159e-309	5	3	22	2
+15788	0	HOXA9	3205	Protein	1	0	0	0	0
+15788	1	HOXA9	3205	Protein	1.35171e-309	3	5	22	-2
+15791	-1	Telomestatin		Compound	1.21612e-309	0	1	0	-1
+15791	0	Telomestatin		Compound	1	0	0	0	0
+15791	1	Telomestatin		Compound	1.35192e-309	1	0	0	1
+15915	-1	NFIA	4774	Protein	1.21633e-309	1	0	6	1
+15915	0	NFIA	4774	Protein	1	0	0	0	0
+15915	1	NFIA	4774	Protein	1.35214e-309	0	1	6	-1
+15935	-1	Tgfbr Family		Protein	1.21654e-309	3	0	10	3
+15935	0	Tgfbr Family		Protein	1	0	0	0	0
+15935	1	Tgfbr Family		Protein	1.35235e-309	0	3	10	-3
+15965	-1	CTCFL	140690	Protein	1.21675e-309	1	0	3	1
+15965	0	CTCFL	140690	Protein	1	0	0	0	0
+15965	1	CTCFL	140690	Protein	1.35256e-309	0	1	3	-1
+15973	-1	Map2k Family		Protein	1.21696e-309	2	1	10	1
+15973	0	Map2k Family		Protein	1	0	0	0	0
+15973	1	Map2k Family		Protein	1.35277e-309	1	2	10	-1
+16011	-1	ELF1	1997	Protein	1.21718e-309	1	0	2	1
+16011	0	ELF1	1997	Protein	1	0	0	0	0
+16011	1	ELF1	1997	Protein	1.35298e-309	0	1	2	-1
+16019	-1	PLAGL1	5325	Protein	1.21739e-309	0	1	4	-1
+16019	0	PLAGL1	5325	Protein	1	0	0	0	0
+16019	1	PLAGL1	5325	Protein	1.3532e-309	1	0	4	1
+16043	-1	CBFA2T3	863	Protein	1.2176e-309	1	1	4	0
+16043	0	CBFA2T3	863	Protein	1	0	0	0	0
+16043	1	CBFA2T3	863	Protein	1.35341e-309	1	1	4	0
+1607	-1	ONECUT1	3175	Protein	1.162e-309	0	1	5	-1
+1607	0	ONECUT1	3175	Protein	1	0	0	0	0
+1607	1	ONECUT1	3175	Protein	1.29781e-309	1	0	5	1
+16213	-1	Low Density LipoProtein		Compound	1.21781e-309	2	1	8	1
+16213	0	Low Density LipoProtein		Compound	1	0	0	0	0
+16213	1	Low Density LipoProtein		Compound	1.35362e-309	1	2	8	-1
+16253	-1	serum glucose		Compound	1.21803e-309	5	6	86	-1
+16253	0	serum glucose		Compound	1	0	0	0	0
+16253	1	serum glucose		Compound	1.35383e-309	6	5	86	1
+16308	-1	fulvestrant	31638	Compound	1.21824e-309	5	1	7	4
+16308	0	fulvestrant	31638	Compound	1	0	0	0	0
+16308	1	fulvestrant	31638	Compound	1.35405e-309	1	5	7	-4
+16488	-1	NANOG	79923	Protein	1.21845e-309	1	0	0	1
+16488	0	NANOG	79923	Protein	1	0	0	0	0
+16488	1	NANOG	79923	Protein	1.35426e-309	0	1	0	-1
+16511	-1	Testosterone propionate		Compound	1.21866e-309	1	0	4	1
+16511	0	Testosterone propionate		Compound	1	0	0	0	0
+16511	1	Testosterone propionate		Compound	1.35447e-309	0	1	4	-1
+16615	-1	E2F Family		Protein	1.21887e-309	1	2	34	-1
+16615	0	E2F Family		Protein	1	0	0	0	0
+16615	1	E2F Family		Protein	1.35468e-309	2	1	34	1
+1663	-1	HDAC Family		Protein	1.16222e-309	1	0	8	1
+1663	0	HDAC Family		Protein	1	0	0	0	0
+1663	1	HDAC Family		Protein	1.29802e-309	0	1	8	-1
+16635	-1	gamma-tocopherol	18185	Compound	1.21909e-309	1	1	7	0
+16635	0	gamma-tocopherol	18185	Compound	1	0	0	0	0
+16635	1	gamma-tocopherol	18185	Compound	1.35489e-309	1	1	7	0
+16751	-1	MTF1	4520	Protein	1.2193e-309	1	0	13	1
+16751	0	MTF1	4520	Protein	1	0	0	0	0
+16751	1	MTF1	4520	Protein	1.35511e-309	0	1	13	-1
+16758	-1	NOS2	4843	Protein	1.21951e-309	0	1	5	-1
+16758	0	NOS2	4843	Protein	1	0	0	0	0
+16758	1	NOS2	4843	Protein	1.35532e-309	1	0	5	1
+16790	-1	Isoproterenol		Compound	1.21972e-309	0	2	3	-2
+16790	0	Isoproterenol		Compound	1	0	0	0	0
+16790	1	Isoproterenol		Compound	1.35553e-309	2	0	3	2
+16795	-1	POU2F2	5452	Protein	1.21994e-309	0	1	6	-1
+16795	0	POU2F2	5452	Protein	1	0	0	0	0
+16795	1	POU2F2	5452	Protein	1.35574e-309	1	0	6	1
+16816	-1	Acetaminophen		Compound	1.22015e-309	1	0	5	1
+16816	0	Acetaminophen		Compound	1	0	0	0	0
+16816	1	Acetaminophen		Compound	1.35596e-309	0	1	5	-1
+16819	-1	lipid	18059	Compound	1.22036e-309	0	1	2	-1
+16819	0	lipid	18059	Compound	1	0	0	0	0
+16819	1	lipid	18059	Compound	1.35617e-309	1	0	2	1
+16854	-1	NOS3	4846	Protein	1.22057e-309	1	1	16	0
+16854	0	NOS3	4846	Protein	1.28848e-309	0	0	0	0
+16854	1	NOS3	4846	Protein	1	1	1	16	0
+16862	-1	fenofibrate	5001	Compound	1.22078e-309	0	2	9	-2
+16862	0	fenofibrate	5001	Compound	1	0	0	0	0
+16862	1	fenofibrate	5001	Compound	1.35659e-309	2	0	9	2
+16869	-1	RAR Family		Protein	1.221e-309	1	0	7	1
+16869	0	RAR Family		Protein	1	0	0	0	0
+16869	1	RAR Family		Protein	1.3568e-309	0	1	7	-1
+16995	-1	camptothecin	27656	Compound	1.22121e-309	2	1	3	1
+16995	0	camptothecin	27656	Compound	1	0	0	0	0
+16995	1	camptothecin	27656	Compound	1.35702e-309	1	2	3	-1
+17019	-1	HTT	3064	Protein	1.22142e-309	1	0	3	1
+17019	0	HTT	3064	Protein	1	0	0	0	0
+17019	1	HTT	3064	Protein	1.35723e-309	0	1	3	-1
+1711	-1	GABPB1	2553	Protein	1.16243e-309	0	1	3	-1
+1711	0	GABPB1	2553	Protein	1	0	0	0	0
+1711	1	GABPB1	2553	Protein	1.29824e-309	1	0	3	1
+174	-1	hydrogen peroxide	16240	Compound	1	16	7	19	9
+174	0	hydrogen peroxide	16240	Compound	1.22206e-309	0	0	0	0
+174	1	hydrogen peroxide	16240	Compound	1.28996e-309	7	16	19	-9
+1776	-1	ZFP161	7541	Protein	1.16264e-309	1	0	0	1
+1776	0	ZFP161	7541	Protein	1.23055e-309	0	0	0	0
+1776	1	ZFP161	7541	Protein	1	0	1	0	-1
+1841	-1	androgen	50113	Compound	1.16285e-309	8	12	138	-4
+1841	0	androgen	50113	Compound	1.23076e-309	0	0	0	0
+1841	1	androgen	50113	Compound	1	12	8	138	4
+1846	-1	prostaglandin A2	27820	Compound	1.16307e-309	0	1	0	-1
+1846	0	prostaglandin A2	27820	Compound	1	0	0	0	0
+1846	1	prostaglandin A2	27820	Compound	1.29887e-309	1	0	0	1
+1863	-1	BHLHE40	8553	Protein	1.16328e-309	1	4	43	-3
+1863	0	BHLHE40	8553	Protein	1.23118e-309	0	0	0	0
+1863	1	BHLHE40	8553	Protein	1	4	1	43	3
+1940	-1	ARX	170302	Protein	1.16349e-309	1	1	41	0
+1940	0	ARX	170302	Protein	1.23139e-309	0	0	0	0
+1940	1	ARX	170302	Protein	1	1	1	41	0
+1994	-1	POU4F1	5457	Protein	1.1637e-309	1	0	1	1
+1994	0	POU4F1	5457	Protein	1	0	0	0	0
+1994	1	POU4F1	5457	Protein	1.29951e-309	0	1	1	-1
+2054	-1	PRKA Family		Protein	1.16391e-309	1	3	17	-2
+2054	0	PRKA Family		Protein	1	0	0	0	0
+2054	1	PRKA Family		Protein	1.29972e-309	3	1	17	2
+2067	-1	FOXD1	2297	Protein	1.16413e-309	0	1	4	-1
+2067	0	FOXD1	2297	Protein	1.23203e-309	0	0	0	0
+2067	1	FOXD1	2297	Protein	1	1	0	4	1
+2105	-1	Cebp Family		Protein	1.16434e-309	0	1	7	-1
+2105	0	Cebp Family		Protein	1	0	0	0	0
+2105	1	Cebp Family		Protein	1.30015e-309	1	0	7	1
+2113	-1	TGFBR Family		Protein	1.16455e-309	6	7	58	-1
+2113	0	TGFBR Family		Protein	1	0	0	0	0
+2113	1	TGFBR Family		Protein	1.30036e-309	7	6	58	1
+2128	-1	RUNX3	864	Protein	1.16476e-309	0	1	4	-1
+2128	0	RUNX3	864	Protein	1	0	0	0	0
+2128	1	RUNX3	864	Protein	1.30057e-309	1	0	4	1
+214	-1	TYMP	1890	Protein	2.33733000000002e-310	1	0	3	1
+214	0	TYMP	1890	Protein	1	0	0	0	0
+214	1	TYMP	1890	Protein	1.29017e-309	0	1	3	-1
+2178	-1	quinolinic acid	16675	Compound	1.16498e-309	1	0	0	1
+2178	0	quinolinic acid	16675	Compound	1	0	0	0	0
+2178	1	quinolinic acid	16675	Compound	1.30078e-309	0	1	0	-1
+2212	-1	BLVRA	644	Protein	1.16519e-309	0	1	1	-1
+2212	0	BLVRA	644	Protein	1	0	0	0	0
+2212	1	BLVRA	644	Protein	1.301e-309	1	0	1	1
+222	-1	STAT5 Family		Protein	1.15458e-309	1	0	10	1
+222	0	STAT5 Family		Protein	1	0	0	0	0
+222	1	STAT5 Family		Protein	1.29039e-309	0	1	10	-1
+2261	-1	Stanolone		Compound	1.1654e-309	6	6	22	0
+2261	0	Stanolone		Compound	1	0	0	0	0
+2261	1	Stanolone		Compound	1.30121e-309	6	6	22	0
+2312	-1	staurosporine	15738	Compound	1.16561e-309	0	1	2	-1
+2312	0	staurosporine	15738	Compound	1	0	0	0	0
+2312	1	staurosporine	15738	Compound	1.30142e-309	1	0	2	1
+2340	-1	NFE2L1	4779	Protein	1	1	1	26	0
+2340	0	NFE2L1	4779	Protein	1.23373e-309	0	0	0	0
+2340	1	NFE2L1	4779	Protein	1.30163e-309	1	1	26	0
+2342	-1	Pdgf Family		Protein	1.16604e-309	1	1	2	0
+2342	0	Pdgf Family		Protein	1	0	0	0	0
+2342	1	Pdgf Family		Protein	1.30184e-309	1	1	2	0
+2380	-1	Prostratin		Compound	1.16625e-309	1	0	0	1
+2380	0	Prostratin		Compound	1	0	0	0	0
+2380	1	Prostratin		Compound	1.30206e-309	0	1	0	-1
+2392	-1	HIST1H1T	3010	Protein	1.16646e-309	2	1	0	1
+2392	0	HIST1H1T	3010	Protein	1	0	0	0	0
+2392	1	HIST1H1T	3010	Protein	1.30227e-309	1	2	0	-1
+2448	-1	arachidonic acid	15843	Compound	1.16667e-309	3	1	15	2
+2448	0	arachidonic acid	15843	Compound	1	0	0	0	0
+2448	1	arachidonic acid	15843	Compound	1.30248e-309	1	3	15	-2
+2474	-1	High Density LipoProtein		Compound	1.16689e-309	1	0	4	1
+2474	0	High Density LipoProtein		Compound	1	0	0	0	0
+2474	1	High Density LipoProtein		Compound	1.30269e-309	0	1	4	-1
+2499	-1	clofibrate	3750	Compound	1.1671e-309	1	3	93	-2
+2499	0	clofibrate	3750	Compound	1	0	0	0	0
+2499	1	clofibrate	3750	Compound	1.30291e-309	3	1	93	2
+2548	-1	CUX1	1523	Protein	1.16731e-309	1	1	6	0
+2548	0	CUX1	1523	Protein	1	0	0	0	0
+2548	1	CUX1	1523	Protein	1.30312e-309	1	1	6	0
+255	-1	FOXA1	3169	Protein	1.15479e-309	1	0	0	1
+255	0	FOXA1	3169	Protein	1	0	0	0	0
+255	1	FOXA1	3169	Protein	1.2906e-309	0	1	0	-1
+2591	-1	GATA Family		Protein	1.16752e-309	0	1	0	-1
+2591	0	GATA Family		Protein	1	0	0	0	0
+2591	1	GATA Family		Protein	1.30333e-309	1	0	0	1
+2628	-1	PIK3 Family		Protein	1.16773e-309	4	5	68	-1
+2628	0	PIK3 Family		Protein	1	0	0	0	0
+2628	1	PIK3 Family		Protein	1.30354e-309	5	4	68	1
+2700	-1	MAPK Erk Family		Protein	1.16795e-309	3	4	20	-1
+2700	0	MAPK Erk Family		Protein	1	0	0	0	0
+2700	1	MAPK Erk Family		Protein	1.30375e-309	4	3	20	1
+2717	-1	melatonin	16796	Compound	1.16816e-309	3	2	3	1
+2717	0	melatonin	16796	Compound	1	0	0	0	0
+2717	1	melatonin	16796	Compound	1.30397e-309	2	3	3	-1
+2743	-1	Estrogens		Compound	1.16837e-309	2	2	17	0
+2743	0	Estrogens		Compound	1	0	0	0	0
+2743	1	Estrogens		Compound	1.30418e-309	2	2	17	0
+2760	-1	SOX1	6656	Protein	1.16858e-309	2	0	15	2
+2760	0	SOX1	6656	Protein	1	0	0	0	0
+2760	1	SOX1	6656	Protein	1.30439e-309	0	2	15	-2
+2828	-1	etoposide	4911	Compound	1.1688e-309	1	0	4	1
+2828	0	etoposide	4911	Compound	1	0	0	0	0
+2828	1	etoposide	4911	Compound	1.3046e-309	0	1	4	-1
+2917	-1	glutathione	16856	Compound	1.16901e-309	0	1	0	-1
+2917	0	glutathione	16856	Compound	1	0	0	0	0
+2917	1	glutathione	16856	Compound	1.30482e-309	1	0	0	1
+2974	-1	ENO1	2023	Protein	1.16922e-309	2	2	12	0
+2974	0	ENO1	2023	Protein	1	0	0	0	0
+2974	1	ENO1	2023	Protein	1.30503e-309	2	2	12	0
+3144	-1	Tetradecanoylphorbol acetate		Compound	1.16943e-309	4	6	68	-2
+3144	0	Tetradecanoylphorbol acetate		Compound	1	0	0	0	0
+3144	1	Tetradecanoylphorbol acetate		Compound	1.30524e-309	6	4	68	2
+3172	-1	TRIM28	10155	Protein	1.16964e-309	2	2	9	0
+3172	0	TRIM28	10155	Protein	1	0	0	0	0
+3172	1	TRIM28	10155	Protein	1.30545e-309	2	2	9	0
+3212	-1	ETV1	2115	Protein	1.16986e-309	2	4	87	-2
+3212	0	ETV1	2115	Protein	1	0	0	0	0
+3212	1	ETV1	2115	Protein	1.30566e-309	4	2	87	2
+326	-1	cyclic AMP		Compound	1.155e-309	7	9	90	-2
+326	0	cyclic AMP		Compound	1	0	0	0	0
+326	1	cyclic AMP		Compound	1.29081e-309	9	7	90	2
+3305	-1	KLF9	687	Protein	1.17007e-309	0	2	9	-2
+3305	0	KLF9	687	Protein	1	0	0	0	0
+3305	1	KLF9	687	Protein	1.30588e-309	2	0	9	2
+3330	-1	butyric acid	30772	Compound	1.17028e-309	0	1	6	-1
+3330	0	butyric acid	30772	Compound	1	0	0	0	0
+3330	1	butyric acid	30772	Compound	1.30609e-309	1	0	6	1
+3336	-1	celecoxib	41423	Compound	1.17049e-309	3	2	0	1
+3336	0	celecoxib	41423	Compound	1	0	0	0	0
+3336	1	celecoxib	41423	Compound	1.3063e-309	2	3	0	-1
+3402	-1	Aspirin		Compound	1.17071e-309	0	2	22	-2
+3402	0	Aspirin		Compound	1	0	0	0	0
+3402	1	Aspirin		Compound	1.30651e-309	2	0	22	2
+3475	-1	mifepristone	50692	Compound	1	9	3	1	6
+3475	0	mifepristone	50692	Compound	1.23882e-309	0	0	0	0
+3475	1	mifepristone	50692	Compound	1.30673e-309	3	9	1	-6
+3478	-1	corticotropin	3892	Compound	1.17113e-309	0	1	4	-1
+3478	0	corticotropin	3892	Compound	1	0	0	0	0
+3478	1	corticotropin	3892	Compound	1.30694e-309	1	0	4	1
+3544	-1	Suberoylanilide hydroxamic acid		Compound	1.17134e-309	1	2	1	-1
+3544	0	Suberoylanilide hydroxamic acid		Compound	1	0	0	0	0
+3544	1	Suberoylanilide hydroxamic acid		Compound	1.30715e-309	2	1	1	1
+3550	-1	Mapk p38 Family		Protein	1.17155e-309	1	0	7	1
+3550	0	Mapk p38 Family		Protein	1	0	0	0	0
+3550	1	Mapk p38 Family		Protein	1.30736e-309	0	1	7	-1
+357	-1	PBX2	5089	Protein	1.15521e-309	0	1	3	-1
+357	0	PBX2	5089	Protein	1.22312e-309	0	0	0	0
+357	1	PBX2	5089	Protein	1	1	0	3	1
+3601	-1	CDK2AP1	8099	Protein	1.17177e-309	1	1	2	0
+3601	0	CDK2AP1	8099	Protein	1	0	0	0	0
+3601	1	CDK2AP1	8099	Protein	1.30757e-309	1	1	2	0
+3690	-1	cholic acid	16359	Compound	1.17198e-309	2	3	2	-1
+3690	0	cholic acid	16359	Compound	1	0	0	0	0
+3690	1	cholic acid	16359	Compound	1.30779e-309	3	2	2	1
+3727	-1	Allergens		Compound	1.17219e-309	1	4	91	-3
+3727	0	Allergens		Compound	1	0	0	0	0
+3727	1	Allergens		Compound	1.308e-309	4	1	91	3
+3774	-1	HOXA5	3202	Protein	1.1724e-309	2	2	11	0
+3774	0	HOXA5	3202	Protein	1	0	0	0	0
+3774	1	HOXA5	3202	Protein	1.30821e-309	2	2	11	0
+3787	-1	THAP1	55145	Protein	1.17261e-309	3	0	88	3
+3787	0	THAP1	55145	Protein	1	0	0	0	0
+3787	1	THAP1	55145	Protein	1.30842e-309	0	3	88	-3
+3814	-1	Expi		Protein	1.17283e-309	0	1	5	-1
+3814	0	Expi		Protein	1	0	0	0	0
+3814	1	Expi		Protein	1.30863e-309	1	0	5	1
+3853	-1	VEGF Family		Protein	1.17304e-309	0	2	8	-2
+3853	0	VEGF Family		Protein	1	0	0	0	0
+3853	1	VEGF Family		Protein	1.30885e-309	2	0	8	2
+3875	-1	RB1	5925	Protein	1.17325e-309	3	2	12	1
+3875	0	RB1	5925	Protein	1	0	0	0	0
+3875	1	RB1	5925	Protein	1.30906e-309	2	3	12	-1
+3883	-1	HNF1A	6927	Protein	1.17346e-309	2	1	19	1
+3883	0	HNF1A	6927	Protein	1	0	0	0	0
+3883	1	HNF1A	6927	Protein	1.30927e-309	1	2	19	-1
+4016	-1	Dronabinol		Compound	1.17368e-309	1	2	0	-1
+4016	0	Dronabinol		Compound	1	0	0	0	0
+4016	1	Dronabinol		Compound	1.30948e-309	2	1	0	1
+4030	-1	metformin	6801	Compound	1.17389e-309	3	0	4	3
+4030	0	metformin	6801	Compound	1.24179e-309	0	0	0	0
+4030	1	metformin	6801	Compound	1	0	3	4	-3
+4078	-1	NPPA	4878	Protein	1.1741e-309	0	2	0	-2
+4078	0	NPPA	4878	Protein	1	0	0	0	0
+4078	1	NPPA	4878	Protein	1.30991e-309	2	0	0	2
+4094	-1	verapamil	9948	Compound	1.17431e-309	1	0	1	1
+4094	0	verapamil	9948	Compound	1	0	0	0	0
+4094	1	verapamil	9948	Compound	1.31012e-309	0	1	1	-1
+4263	-1	trichostatin A	46024	Compound	1	5	3	104	2
+4263	0	trichostatin A	46024	Compound	1.24243e-309	0	0	0	0
+4263	1	trichostatin A	46024	Compound	1.31033e-309	3	5	104	-2
+4358	-1	flutamide	5132	Compound	1.17474e-309	1	0	41	1
+4358	0	flutamide	5132	Compound	1	0	0	0	0
+4358	1	flutamide	5132	Compound	1.31054e-309	0	1	41	-1
+4373	-1	Retinol acetate		Compound	1.17495e-309	4	0	3	4
+4373	0	Retinol acetate		Compound	1	0	0	0	0
+4373	1	Retinol acetate		Compound	1.31076e-309	0	4	3	-4
+4447	-1	IFRD1	3475	Protein	1.17516e-309	1	0	4	1
+4447	0	IFRD1	3475	Protein	1	0	0	0	0
+4447	1	IFRD1	3475	Protein	1.31097e-309	0	1	4	-1
+4457	-1	resveratrol	27881	Compound	1.17537e-309	7	4	40	3
+4457	0	resveratrol	27881	Compound	1	0	0	0	0
+4457	1	resveratrol	27881	Compound	1.31118e-309	4	7	40	-3
+453	-1	RPS29	6235	Protein	1.15543e-309	1	0	4	1
+453	0	RPS29	6235	Protein	1	0	0	0	0
+453	1	RPS29	6235	Protein	1.29123e-309	0	1	4	-1
+4588	-1	ciprofibrate	50867	Compound	1.17559e-309	2	6	37	-4
+4588	0	ciprofibrate	50867	Compound	1	0	0	0	0
+4588	1	ciprofibrate	50867	Compound	1.31139e-309	6	2	37	4
+4647	-1	ZHX3	23051	Protein	1.1758e-309	1	0	14	1
+4647	0	ZHX3	23051	Protein	1	0	0	0	0
+4647	1	ZHX3	23051	Protein	1.31161e-309	0	1	14	-1
+4669	-1	D-Glucose, anhydrous		Compound	1.17601e-309	2	3	25	-1
+4669	0	D-Glucose, anhydrous		Compound	1	0	0	0	0
+4669	1	D-Glucose, anhydrous		Compound	1.31182e-309	3	2	25	1
+468	-1	ceramide	52639	Compound	1.15564e-309	2	0	89	2
+468	0	ceramide	52639	Compound	1.22354e-309	0	0	0	0
+468	1	ceramide	52639	Compound	1	0	2	89	-2
+4733	-1	serum leptin		Compound	1.17622e-309	2	0	10	2
+4733	0	serum leptin		Compound	1	0	0	0	0
+4733	1	serum leptin		Compound	1.31203e-309	0	2	10	-2
+4751	-1	NKX2-1	7080	Protein	1.17643e-309	2	2	5	0
+4751	0	NKX2-1	7080	Protein	1	0	0	0	0
+4751	1	NKX2-1	7080	Protein	1.31224e-309	2	2	5	0
+4877	-1	NADH	16908	Compound	1.17665e-309	0	2	0	-2
+4877	0	NADH	16908	Compound	1	0	0	0	0
+4877	1	NADH	16908	Compound	1.31245e-309	2	0	0	2
+4995	-1	aldosterone	27584	Compound	1.17686e-309	5	2	20	3
+4995	0	aldosterone	27584	Compound	1.24476e-309	0	0	0	0
+4995	1	aldosterone	27584	Compound	1	2	5	20	-3
+500	-1	PIAS2	9063	Protein	1.15585e-309	0	1	3	-1
+500	0	PIAS2	9063	Protein	1	0	0	0	0
+500	1	PIAS2	9063	Protein	1.29166e-309	1	0	3	1
+5155	-1	U2AF1	7307	Protein	1.17707e-309	1	0	0	1
+5155	0	U2AF1	7307	Protein	1	0	0	0	0
+5155	1	U2AF1	7307	Protein	1.31288e-309	0	1	0	-1
+524	-1	Hydrocortisone		Compound	1.15606e-309	6	5	29	1
+524	0	Hydrocortisone		Compound	1	0	0	0	0
+524	1	Hydrocortisone		Compound	1.29187e-309	5	6	29	-1
+5315	-1	TAF4B	6875	Protein	1.17728e-309	0	1	2	-1
+5315	0	TAF4B	6875	Protein	1	0	0	0	0
+5315	1	TAF4B	6875	Protein	1.31309e-309	1	0	2	1
+5346	-1	thapsigargin	9516	Compound	1	0	2	21	-2
+5346	0	thapsigargin	9516	Compound	1.2454e-309	0	0	0	0
+5346	1	thapsigargin	9516	Compound	1.3133e-309	2	0	21	2
+5459	-1	FOXO3	2309	Protein	1	83	17	11	66
+5459	0	FOXO3	2309	Protein	1.24561e-309	0	0	0	0
+5459	1	FOXO3	2309	Protein	1.31352e-309	17	83	11	-66
+5520	-1	Agtr1b	81638	Protein	1.17792e-309	0	1	3	-1
+5520	0	Agtr1b	81638	Protein	1	0	0	0	0
+5520	1	Agtr1b	81638	Protein	1.31373e-309	1	0	3	1
+5531	-1	ZBTB17	7709	Protein	1.17813e-309	1	1	8	0
+5531	0	ZBTB17	7709	Protein	1	0	0	0	0
+5531	1	ZBTB17	7709	Protein	1.31394e-309	1	1	8	0
+5603	-1	lipopolysaccharide	16412	Compound	1.17834e-309	7	4	66	3
+5603	0	lipopolysaccharide	16412	Compound	1	0	0	0	0
+5603	1	lipopolysaccharide	16412	Compound	1.31415e-309	4	7	66	-3
+5742	-1	palmitic acid	15756	Compound	1.17856e-309	3	0	8	3
+5742	0	palmitic acid	15756	Compound	1	0	0	0	0
+5742	1	palmitic acid	15756	Compound	1.31436e-309	0	3	8	-3
+5752	-1	bortezomib	52717	Compound	1.17877e-309	2	2	10	0
+5752	0	bortezomib	52717	Compound	1	0	0	0	0
+5752	1	bortezomib	52717	Compound	1.31458e-309	2	2	10	0
+5897	-1	homocysteine	17230	Compound	1.17898e-309	2	0	4	2
+5897	0	homocysteine	17230	Compound	1	0	0	0	0
+5897	1	homocysteine	17230	Compound	1.31479e-309	0	2	4	-2
+5945	-1	TGFB Family		Protein	1.17919e-309	2	0	16	2
+5945	0	TGFB Family		Protein	1	0	0	0	0
+5945	1	TGFB Family		Protein	1.315e-309	0	2	16	-2
+597	-1	MAPK p38 Family		Protein	1.15628e-309	2	1	5	1
+597	0	MAPK p38 Family		Protein	1	0	0	0	0
+597	1	MAPK p38 Family		Protein	1.29208e-309	1	2	5	-1
+6083	-1	FOXO4	4303	Protein	1.17941e-309	6	2	9	4
+6083	0	FOXO4	4303	Protein	1	0	0	0	0
+6083	1	FOXO4	4303	Protein	1.31521e-309	2	6	9	-4
+6096	-1	POU3F3	5455	Protein	1.17962e-309	1	0	6	1
+6096	0	POU3F3	5455	Protein	1	0	0	0	0
+6096	1	POU3F3	5455	Protein	1.31543e-309	0	1	6	-1
+6109	-1	CASQ1	844	Protein	1	1	0	7	1
+6109	0	CASQ1	844	Protein	1.24773e-309	0	0	0	0
+6109	1	CASQ1	844	Protein	1.31564e-309	0	1	7	-1
+6160	-1	Ciglitazone		Compound	1.18004e-309	1	0	11	1
+6160	0	Ciglitazone		Compound	1	0	0	0	0
+6160	1	Ciglitazone		Compound	1.31585e-309	0	1	11	-1
+617	-1	lapatinib	49603	Compound	1.15649e-309	5	0	4	5
+617	0	lapatinib	49603	Compound	1	0	0	0	0
+617	1	lapatinib	49603	Compound	1.2923e-309	0	5	4	-5
+6196	-1	okadaic acid	44658	Compound	1.18025e-309	1	2	8	-1
+6196	0	okadaic acid	44658	Compound	1	0	0	0	0
+6196	1	okadaic acid	44658	Compound	1.31606e-309	2	1	8	1
+6321	-1	HNRNPU	3192	Protein	1.18047e-309	1	0	1	1
+6321	0	HNRNPU	3192	Protein	1	0	0	0	0
+6321	1	HNRNPU	3192	Protein	1.31627e-309	0	1	1	-1
+6382	-1	KLF11	8462	Protein	1.18068e-309	0	1	5	-1
+6382	0	KLF11	8462	Protein	1	0	0	0	0
+6382	1	KLF11	8462	Protein	1.31649e-309	1	0	5	1
+641	-1	HOXD3	3232	Protein	1.1567e-309	2	3	0	-1
+641	0	HOXD3	3232	Protein	1	0	0	0	0
+641	1	HOXD3	3232	Protein	1.29251e-309	3	2	0	1
+6503	-1	Dinoprostone		Compound	1.18089e-309	1	2	16	-1
+6503	0	Dinoprostone		Compound	1	0	0	0	0
+6503	1	Dinoprostone		Compound	1.3167e-309	2	1	16	1
+6507	-1	PIAS2	9063	Protein	1.1811e-309	0	1	1	-1
+6507	0	PIAS2	9063	Protein	1.24901e-309	0	0	0	0
+6507	1	PIAS2	9063	Protein	1	1	0	1	1
+6560	-1	Activin		Compound	1.18132e-309	1	2	4	-1
+6560	0	Activin		Compound	1	0	0	0	0
+6560	1	Activin		Compound	1.31712e-309	2	1	4	1
+668	-1	CLN5	1203	Protein	1.15691e-309	1	3	0	-2
+668	0	CLN5	1203	Protein	1	0	0	0	0
+668	1	CLN5	1203	Protein	1.29272e-309	3	1	0	2
+6759	-1	MESP2	145873	Protein	1.18153e-309	0	1	0	-1
+6759	0	MESP2	145873	Protein	1	0	0	0	0
+6759	1	MESP2	145873	Protein	1.31733e-309	1	0	0	1
+6762	-1	HNRNPK	3190	Protein	1.18174e-309	3	0	5	3
+6762	0	HNRNPK	3190	Protein	1.24964e-309	0	0	0	0
+6762	1	HNRNPK	3190	Protein	1	0	3	5	-3
+6774	-1	NGF	4803	Protein	1.18195e-309	4	2	51	2
+6774	0	NGF	4803	Protein	1	0	0	0	0
+6774	1	NGF	4803	Protein	1.31776e-309	2	4	51	-2
+6873	-1	trans10,cis12-Octadecadienoate		Compound	1.18216e-309	2	0	0	2
+6873	0	trans10,cis12-Octadecadienoate		Compound	1	0	0	0	0
+6873	1	trans10,cis12-Octadecadienoate		Compound	1.31797e-309	0	2	0	-2
+690	-1	Mapk JNK Family		Protein	1.15712e-309	0	1	0	-1
+690	0	Mapk JNK Family		Protein	1	0	0	0	0
+690	1	Mapk JNK Family		Protein	1.29293e-309	1	0	0	1
+6927	-1	lysophosphatidic acid	52288	Compound	1.18238e-309	0	1	5	-1
+6927	0	lysophosphatidic acid	52288	Compound	1	0	0	0	0
+6927	1	lysophosphatidic acid	52288	Compound	1.31818e-309	1	0	5	1
+6943	-1	HOXB1	3211	Protein	1.18259e-309	0	1	0	-1
+6943	0	HOXB1	3211	Protein	1	0	0	0	0
+6943	1	HOXB1	3211	Protein	1.3184e-309	1	0	0	1
+6954	-1	TP53	7157	Protein	1	8	5	116	3
+6954	0	TP53	7157	Protein	1.2507e-309	0	0	0	0
+6954	1	TP53	7157	Protein	1.31861e-309	5	8	116	-3
+7110	-1	RAS Family		Protein	1.18301e-309	0	1	16	-1
+7110	0	RAS Family		Protein	1	0	0	0	0
+7110	1	RAS Family		Protein	1.31882e-309	1	0	16	1
+7148	-1	GRP	2922	Protein	1.18322e-309	1	0	3	1
+7148	0	GRP	2922	Protein	1	0	0	0	0
+7148	1	GRP	2922	Protein	1.31903e-309	0	1	3	-1
+7155	-1	taurocholic acid	28865	Compound	1.18344e-309	1	0	12	1
+7155	0	taurocholic acid	28865	Compound	1	0	0	0	0
+7155	1	taurocholic acid	28865	Compound	1.31924e-309	0	1	12	-1
+7231	-1	TCF3	6929	Protein	1.18365e-309	0	1	3	-1
+7231	0	TCF3	6929	Protein	1	0	0	0	0
+7231	1	TCF3	6929	Protein	1.31946e-309	1	0	3	1
+7246	-1	FOXO1	2308	Protein	1.18386e-309	1	0	8	1
+7246	0	FOXO1	2308	Protein	1	0	0	0	0
+7246	1	FOXO1	2308	Protein	1.31967e-309	0	1	8	-1
+7382	-1	ICI D1694		Compound	1.18407e-309	1	1	3	0
+7382	0	ICI D1694		Compound	1	0	0	0	0
+7382	1	ICI D1694		Compound	1.31988e-309	1	1	3	0
+7403	-1	Very Low Density LipoProtein		Compound	1.18429e-309	1	0	1	1
+7403	0	Very Low Density LipoProtein		Compound	1	0	0	0	0
+7403	1	Very Low Density LipoProtein		Compound	1.32009e-309	0	1	1	-1
+7405	-1	finasteride	5062	Compound	1.1845e-309	1	0	0	1
+7405	0	finasteride	5062	Compound	1	0	0	0	0
+7405	1	finasteride	5062	Compound	1.32031e-309	0	1	0	-1
+7414	-1	calcitriol	17823	Compound	1.18471e-309	6	5	34	1
+7414	0	calcitriol	17823	Compound	1	0	0	0	0
+7414	1	calcitriol	17823	Compound	1.32052e-309	5	6	34	-1
+743	-1	Oxidopamine		Compound	1	1	1	23	0
+743	0	Oxidopamine		Compound	1.22524e-309	0	0	0	0
+743	1	Oxidopamine		Compound	1.29314e-309	1	1	23	0
+7482	-1	Enzastaurin Hydrochloride		Compound	1.18492e-309	5	1	9	4
+7482	0	Enzastaurin Hydrochloride		Compound	1	0	0	0	0
+7482	1	Enzastaurin Hydrochloride		Compound	1.32073e-309	1	5	9	-4
+750	-1	AGT	183	Protein	1.15755e-309	9	2	24	7
+750	0	AGT	183	Protein	1	0	0	0	0
+750	1	AGT	183	Protein	1.29336e-309	2	9	24	-7
+7511	-1	MYOCD	93649	Protein	1.18513e-309	1	0	7	1
+7511	0	MYOCD	93649	Protein	1	0	0	0	0
+7511	1	MYOCD	93649	Protein	1.32094e-309	0	1	7	-1
+7560	-1	PRKCB	5579	Protein	1.18535e-309	0	1	4	-1
+7560	0	PRKCB	5579	Protein	1	0	0	0	0
+7560	1	PRKCB	5579	Protein	1.32115e-309	1	0	4	1
+7611	-1	NOTCH1	4851	Protein	1.18556e-309	0	1	17	-1
+7611	0	NOTCH1	4851	Protein	1	0	0	0	0
+7611	1	NOTCH1	4851	Protein	1.32137e-309	1	0	17	1
+7619	-1	vitamin E	33234	Compound	1.18577e-309	2	1	6	1
+7619	0	vitamin E	33234	Compound	1	0	0	0	0
+7619	1	vitamin E	33234	Compound	1.32158e-309	1	2	6	-1
+7641	-1	PRKC Family		Protein	1.18598e-309	7	3	50	4
+7641	0	PRKC Family		Protein	1	0	0	0	0
+7641	1	PRKC Family		Protein	1.32179e-309	3	7	50	-4
+7661	-1	IRF7	3665	Protein	1.1862e-309	2	0	74	2
+7661	0	IRF7	3665	Protein	1	0	0	0	0
+7661	1	IRF7	3665	Protein	1.322e-309	0	2	74	-2
+7918	-1	PIK3 Family		Protein	1.18641e-309	2	0	5	2
+7918	0	PIK3 Family		Protein	1	0	0	0	0
+7918	1	PIK3 Family		Protein	1.32222e-309	0	2	5	-2
+7956	-1	HNF1A	6927	Protein	1.18662e-309	2	5	28	-3
+7956	0	HNF1A	6927	Protein	1.25452e-309	0	0	0	0
+7956	1	HNF1A	6927	Protein	1	5	2	28	3
+7997	-1	FOXA2	3170	Protein	1.18683e-309	3	3	108	0
+7997	0	FOXA2	3170	Protein	1	0	0	0	0
+7997	1	FOXA2	3170	Protein	1.32264e-309	3	3	108	0
+8010	-1	SMARCE1	6605	Protein	1.18704e-309	0	1	7	-1
+8010	0	SMARCE1	6605	Protein	1	0	0	0	0
+8010	1	SMARCE1	6605	Protein	1.32285e-309	1	0	7	1
+8031	-1	XIAP	331	Protein	1.18726e-309	1	0	1	1
+8031	0	XIAP	331	Protein	1	0	0	0	0
+8031	1	XIAP	331	Protein	1.32306e-309	0	1	1	-1
+8091	-1	MAPK JNK Family		Protein	1.18747e-309	2	2	15	0
+8091	0	MAPK JNK Family		Protein	1	0	0	0	0
+8091	1	MAPK JNK Family		Protein	1.32328e-309	2	2	15	0
+8141	-1	hydroquinone	17594	Compound	1.18768e-309	1	1	0	0
+8141	0	hydroquinone	17594	Compound	1	0	0	0	0
+8141	1	hydroquinone	17594	Compound	1.32349e-309	1	1	0	0
+8209	-1	GK	2710	Protein	1.18789e-309	2	5	0	-3
+8209	0	GK	2710	Protein	1	0	0	0	0
+8209	1	GK	2710	Protein	1.3237e-309	5	2	0	3
+8376	-1	KLF1	10661	Protein	1.18811e-309	20	115	25	-95
+8376	0	KLF1	10661	Protein	1.25601e-309	0	0	0	0
+8376	1	KLF1	10661	Protein	1	115	20	25	95
+8395	-1	TP63	8626	Protein	1.18832e-309	2	5	121	-3
+8395	0	TP63	8626	Protein	1	0	0	0	0
+8395	1	TP63	8626	Protein	1.32413e-309	5	2	121	3
+844	-1	TFAP2A	7020	Protein	1.15776e-309	1	2	33	-1
+844	0	TFAP2A	7020	Protein	1.22566e-309	0	0	0	0
+844	1	TFAP2A	7020	Protein	1	2	1	33	1
+8532	-1	HOXC8	3224	Protein	1.18853e-309	1	4	30	-3
+8532	0	HOXC8	3224	Protein	1	0	0	0	0
+8532	1	HOXC8	3224	Protein	1.32434e-309	4	1	30	3
+8541	-1	GABPB2	126626	Protein	1.18874e-309	0	1	0	-1
+8541	0	GABPB2	126626	Protein	1	0	0	0	0
+8541	1	GABPB2	126626	Protein	1.32455e-309	1	0	0	1
+868	-1	progesterone	17026	Compound	1.15797e-309	5	4	108	1
+868	0	progesterone	17026	Compound	1	0	0	0	0
+868	1	progesterone	17026	Compound	1.29378e-309	4	5	108	-1
+8688	-1	angiotensin II	48432	Compound	1.18895e-309	4	6	2	-2
+8688	0	angiotensin II	48432	Compound	1	0	0	0	0
+8688	1	angiotensin II	48432	Compound	1.32476e-309	6	4	2	2
+8788	-1	phenylalanine	28044	Compound	1.18917e-309	1	0	11	1
+8788	0	phenylalanine	28044	Compound	1	0	0	0	0
+8788	1	phenylalanine	28044	Compound	1.32497e-309	0	1	11	-1
+8863	-1	Calcium		Compound	1.18938e-309	3	3	31	0
+8863	0	Calcium		Compound	1	0	0	0	0
+8863	1	Calcium		Compound	1.32519e-309	3	3	31	0
+893	-1	TAF4	6874	Protein	1.15819e-309	1	2	14	-1
+893	0	TAF4	6874	Protein	1	0	0	0	0
+893	1	TAF4	6874	Protein	1.29399e-309	2	1	14	1
+8979	-1	Oxidized Low Density LipoProtein		Compound	1.18959e-309	5	6	16	-1
+8979	0	Oxidized Low Density LipoProtein		Compound	1	0	0	0	0
+8979	1	Oxidized Low Density LipoProtein		Compound	1.3254e-309	6	5	16	1
+9015	-1	reactive oxygen species	26523	Compound	1.1898e-309	8	3	30	5
+9015	0	reactive oxygen species	26523	Compound	1	0	0	0	0
+9015	1	reactive oxygen species	26523	Compound	1.32561e-309	3	8	30	-5
+9017	-1	LPIN1	23175	Protein	1.19002e-309	0	1	13	-1
+9017	0	LPIN1	23175	Protein	1	0	0	0	0
+9017	1	LPIN1	23175	Protein	1.32582e-309	1	0	13	1
+9068	-1	HIST1H1A	3024	Protein	1.19023e-309	2	1	0	1
+9068	0	HIST1H1A	3024	Protein	1	0	0	0	0
+9068	1	HIST1H1A	3024	Protein	1.32604e-309	1	2	0	-1
+9123	-1	PLOD1	5351	Protein	1.19044e-309	1	0	0	1
+9123	0	PLOD1	5351	Protein	1	0	0	0	0
+9123	1	PLOD1	5351	Protein	1.32625e-309	0	1	0	-1
+9125	-1	BLVRA	644	Protein	1.19065e-309	1	2	15	-1
+9125	0	BLVRA	644	Protein	1	0	0	0	0
+9125	1	BLVRA	644	Protein	1.32646e-309	2	1	15	1
+9194	-1	wortmannin	52289	Compound	1.19086e-309	1	0	7	1
+9194	0	wortmannin	52289	Compound	1	0	0	0	0
+9194	1	wortmannin	52289	Compound	1.32667e-309	0	1	7	-1
+9195	-1	AKT Family		Protein	1.19108e-309	2	8	22	-6
+9195	0	AKT Family		Protein	1	0	0	0	0
+9195	1	AKT Family		Protein	1.32688e-309	8	2	22	6
+9203	-1	SALL4	57167	Protein	1.19129e-309	0	1	24	-1
+9203	0	SALL4	57167	Protein	1	0	0	0	0
+9203	1	SALL4	57167	Protein	1.3271e-309	1	0	24	1
+925	-1	LY 294002		Compound	1.1584e-309	2	0	15	2
+925	0	LY 294002		Compound	1	0	0	0	0
+925	1	LY 294002		Compound	1.29421e-309	0	2	15	-2
+9303	-1	ZFPM1	161882	Protein	1	1	2	3	-1
+9303	0	ZFPM1	161882	Protein	1.2594e-309	0	0	0	0
+9303	1	ZFPM1	161882	Protein	1.32731e-309	2	1	3	1
+9326	-1	Notch Family		Protein	1.19171e-309	0	1	4	-1
+9326	0	Notch Family		Protein	1.25962e-309	0	0	0	0
+9326	1	Notch Family		Protein	1	1	0	4	1
+9335	-1	MEOX2	4223	Protein	1.19193e-309	1	2	1	-1
+9335	0	MEOX2	4223	Protein	1	0	0	0	0
+9335	1	MEOX2	4223	Protein	1.32773e-309	2	1	1	1
+9464	-1	Thiazolidinedione		Compound	1.19214e-309	7	5	15	2
+9464	0	Thiazolidinedione		Compound	1	0	0	0	0
+9464	1	Thiazolidinedione		Compound	1.32794e-309	5	7	15	-2
+9467	-1	KLF7	8609	Protein	1.19235e-309	0	1	31	-1
+9467	0	KLF7	8609	Protein	1	0	0	0	0
+9467	1	KLF7	8609	Protein	1.32816e-309	1	0	31	1
+9511	-1	coumarin	28794	Compound	1.19256e-309	0	1	25	-1
+9511	0	coumarin	28794	Compound	1	0	0	0	0
+9511	1	coumarin	28794	Compound	1.32837e-309	1	0	25	1
+9701	-1	HDAC Family		Protein	1.19277e-309	2	2	2	0
+9701	0	HDAC Family		Protein	1	0	0	0	0
+9701	1	HDAC Family		Protein	1.32858e-309	2	2	2	0
+979	-1	atorvastatin	39548	Compound	1.15861e-309	2	2	6	0
+979	0	atorvastatin	39548	Compound	1	0	0	0	0
+979	1	atorvastatin	39548	Compound	1.29442e-309	2	2	6	0
+9841	-1	Dietary Lipid		Compound	1.19299e-309	1	1	0	0
+9841	0	Dietary Lipid		Compound	1	0	0	0	0
+9841	1	Dietary Lipid		Compound	1.32879e-309	1	1	0	0
+9865	-1	IFNA Family		Protein	1.1932e-309	0	1	42	-1
+9865	0	IFNA Family		Protein	1	0	0	0	0
+9865	1	IFNA Family		Protein	1.32901e-309	1	0	42	1
+987	-1	HNRNPA1	3178	Protein	1.15882e-309	2	0	3	2
+987	0	HNRNPA1	3178	Protein	1	0	0	0	0
+987	1	HNRNPA1	3178	Protein	1.29463e-309	0	2	3	-2
+9891	-1	Colforsin		Compound	1.19341e-309	5	7	67	-2
+9891	0	Colforsin		Compound	1.26131e-309	0	0	0	0
+9891	1	Colforsin		Compound	1	7	5	67	2
+9909	-1	FOXO1	2308	Protein	1	21	7	187	14
+9909	0	FOXO1	2308	Protein	1.26153e-309	0	0	0	0
+9909	1	FOXO1	2308	Protein	1.32943e-309	7	21	187	-14
+9985	-1	nicotine	18723	Compound	1.19383e-309	3	1	101	2
+9985	0	nicotine	18723	Compound	1	0	0	0	0
+9985	1	nicotine	18723	Compound	1.32964e-309	1	3	101	-2

@@ -1,0 +1,570 @@
+MeSH	MeSH_prob
+Mutant Strains	1.27999e-309
+nonzeroMeSH	1
+Phosphatidylinositol 3-Kinases	1.28253e-309
+TNF-Related Apoptosis-Inducing Ligand	1.30651e-309
+Apoptosis Regulatory Proteins	1.29993e-309
+Inbred BALB C	1.29972e-309
+Membrane Glycoproteins	1.30036e-309
+Protein Binding	1.28784e-309
+Sequence Alignment	1.28954e-309
+Recombinant Fusion Proteins	1.2749e-309
+Transgenic	1.29314e-309
+Prostatic Neoplasms	1.29484e-309
+Prostatic Neoplasms/metabolism	1.29505e-309
+Phosphatidylinositol 3-Kinases/metabolism	1.28275e-309
+Hemoglobins/metabolism	1.28699e-309
+Hemoglobins	1.28741e-309
+Fas Ligand Protein	1.30566e-309
+Phenotype	1.28635e-309
+Ligands	1.29357e-309
+Chromatin	1.27935e-309
+Chromatin/metabolism	1.28126e-309
+3T3 Cells	1.27426e-309
+Cyclic AMP Response Element-Binding Protein/metabolism	1.28911e-309
+Cyclic AMP Response Element-Binding Protein	1.29208e-309
+Recombinant Fusion Proteins/genetics	1.27447e-309
+Binding Sites	1.28763e-309
+Recombinant Fusion Proteins/metabolism	1.27468e-309
+Antirheumatic Agents/therapeutic use	1.34365e-309
+Rheumatoid/therapy	1.34407e-309
+Rheumatoid/metabolism	1.34386e-309
+Repressor Proteins	1.28975e-309
+Muscular Atrophy/metabolism	1.36996e-309
+Muscular Atrophy/pathology	1
+Signal Transduction/physiology	1.29187e-309
+Cell Differentiation/physiology	1.2836e-309
+Sialoglycoproteins	1.30736e-309
+Circular Dichroism	1
+Cyclin-Dependent Kinase Inhibitor p21/genetics	1.33495e-309
+Ultraviolet Rays	1.30906e-309
+Cyclin-Dependent Kinase Inhibitor p21	1.29293e-309
+Fetus	1.27871e-309
+Cell Membrane	1.28402e-309
+Carcinoma	1.29399e-309
+Phosphoproteins/genetics	1.28508e-309
+Adenoviridae/genetics	1.29421e-309
+STAT5 Transcription Factor	1.28869e-309
+Kruppel-Like Transcription Factors	1.27511e-309
+cdc42 GTP-Binding Protein	1
+Toll-Like Receptors/immunology	1.32328e-309
+Phosphoric Monoester Hydrolases	1.29442e-309
+ras Proteins/metabolism	1.30609e-309
+ras Proteins	1.3046e-309
+Tumor Suppressor Proteins/metabolism	1.30524e-309
+PTEN Phosphohydrolase	1.29463e-309
+Tumor Suppressor Proteins/genetics	1.30418e-309
+Phosphoric Monoester Hydrolases/metabolism	1.30673e-309
+Phosphoric Monoester Hydrolases/genetics	1.30694e-309
+Developmental/genetics	1.27702e-309
+Chromatin Immunoprecipitation	1.2802e-309
+Repressor Proteins/genetics	1.29102e-309
+DNA-Binding Proteins/chemistry	1.2923e-309
+Transcription Factors/chemistry	1.29251e-309
+Ethylmaleimide/pharmacology	1.34471e-309
+Ethylmaleimide	1.3445e-309
+Ubiquitins/analogs & derivatives	1.34428e-309
+alpha-Linolenic Acid/administration & dosage	1.29569e-309
+alpha-Linolenic Acid/pharmacology	1.2976e-309
+Double-Blind Method	1
+gamma-Linolenic Acid/pharmacology	1.2959e-309
+Lymphocyte Subsets/physiology	1.29633e-309
+Fish Oils/pharmacology	1.29718e-309
+Arachidonic Acid/administration & dosage	1
+gamma-Linolenic Acid	1.29612e-309
+Lymphocyte Subsets	1.29802e-309
+gamma-Linolenic Acid/administration & dosage	1.29739e-309
+Lymphocyte Subsets/drug effects	1.29654e-309
+Fish Oils/administration & dosage	1.29675e-309
+Transcription Factors/biosynthesis	1.30545e-309
+DNA-Binding Proteins/biosynthesis	1.3063e-309
+Tumor Necrosis Factor-alpha/metabolism	1.29378e-309
+Cytoskeletal Proteins	1.28444e-309
+Blood Proteins	1.28296e-309
+Cell Membrane/metabolism	1.28338e-309
+Phosphoenolpyruvate Carboxykinase (ATP)/metabolism	1.33813e-309
+ras Proteins/genetics	1.30863e-309
+Forkhead Transcription Factors	1.2889e-309
+Carnitine O-Palmitoyltransferase/biosynthesis	1.94683e-309
+Tubulin/genetics	1.94725e-309
+Protein Prenylation/drug effects	1.94746e-309
+5-Aminolevulinate Synthetase	1.3254e-309
+Protein Prenylation/physiology	1
+Protein Prenylation	1
+Cyclic AMP Response Element-Binding Protein/genetics	1.29081e-309
+Vascular/ultrastructure	1.34768e-309
+Aorta/ultrastructure	1.34726e-309
+Cell Membrane/ultrastructure	1.34747e-309
+Arteriosclerosis/immunology	1
+Leukocyte/drug effects	1.37166e-309
+Neoplasm Proteins/metabolism	1.29039e-309
+Kruppel-Like Transcription Factors/metabolism	1.27893e-309
+ras	1.30121e-309
+Membrane Glycoproteins/metabolism	1.30588e-309
+Leukemia/pathology	1.34046e-309
+Blood Proteins/metabolism	1
+Prostatic Neoplasms/genetics	1.29527e-309
+Repressor Proteins/metabolism	1.29017e-309
+Osteopontin	1.30397e-309
+Sialoglycoproteins/genetics	1.30715e-309
+Transcriptional/genetics	1
+Regulatory Elements	1.28062e-309
+Transcriptional	1.28232e-309
+Trans-Activators/genetics	1.28826e-309
+Collagen Type I/genetics	1.30948e-309
+Collagen Type I	1.30927e-309
+Plasminogen Activators/genetics	1.33622e-309
+Urokinase-Type Plasminogen Activator/metabolism	1.3237e-309
+p53	1.30015e-309
+Tamoxifen	1.28572e-309
+Tamoxifen/analogs & derivatives	1.30439e-309
+Femur/metabolism	1.37654e-309
+Alendronate	1.37611e-309
+Alendronate/pharmacology	1.37633e-309
+Hormonal	1.28317e-309
+Papilloma	1.30375e-309
+Squamous Cell	1.30248e-309
+Skin Neoplasms/genetics	1.30354e-309
+Papilloma/genetics	1.30269e-309
+Skin Neoplasms/chemically induced	1.30312e-309
+p53/genetics	1.30057e-309
+Skin Neoplasms	1.30206e-309
+Squamous Cell/chemically induced	1.30291e-309
+Carcinogens	1.30078e-309
+Squamous Cell/genetics	1.30142e-309
+Germ-Line Mutation	1.30184e-309
+ras/genetics	1.301e-309
+Benzo(a)pyrene	1.30227e-309
+Papilloma/chemically induced	1.30333e-309
+Cocarcinogenesis	1.30163e-309
+rhoA GTP-Binding Protein/metabolism	1.31182e-309
+rhoA GTP-Binding Protein	1.30885e-309
+cdc42 GTP-Binding Protein/metabolism	1
+rac1 GTP-Binding Protein/metabolism	1.31203e-309
+rac1 GTP-Binding Protein	1.29548e-309
+ral Guanine Nucleotide Exchange Factor	1
+ral Guanine Nucleotide Exchange Factor/metabolism	1.31352e-309
+Lasers	1.94131e-309
+Protein Kinases/biosynthesis	1
+Stem Cell Factor	1.28848e-309
+Active Transport	1.30482e-309
+Eukaryotic Initiation Factor-4E	1.33113e-309
+Lymphoma	1.30757e-309
+cdc25 Phosphatases/analysis	1
+cdc25 Phosphatases/physiology	1
+Liver Regeneration/drug effects	1
+Cyclin B/physiology	1.34004e-309
+Liver Regeneration/physiology	1
+Tumor Suppressor Proteins/analysis	1.33898e-309
+Sialoglycoproteins/metabolism	1.3133e-309
+rab GTP-Binding Proteins/genetics	1.32561e-309
+Chaperonin 60	1.32413e-309
+Chaperonin 60/metabolism	1.32434e-309
+Kruppel-Like Transcription Factors/genetics	1.27574e-309
+F-Box Proteins/metabolism	1
+Gastrointestinal Stromal Tumors/drug therapy	1.32837e-309
+Gastrointestinal Stromal Tumors/metabolism	1.32752e-309
+Gastrointestinal Stromal Tumors/pathology	1.32858e-309
+Gastrointestinal Stromal Tumors	1.32773e-309
+Proto-Oncogene Proteins c-kit/biosynthesis	1.32879e-309
+Gastrointestinal Stromal Tumors/genetics	1
+RNA Polymerase II/antagonists & inhibitors	1
+Cyclic/therapeutic use	1
+Cyclins/drug effects	1.36572e-309
+Flavonoids/therapeutic use	1.36593e-309
+Piperidines/therapeutic use	1.3655e-309
+Iliac Artery	1.33198e-309
+Collagen/genetics	1.29336e-309
+Neoplasm Metastasis	1.29272e-309
+Fibronectins	1.32901e-309
+Arteries/pathology	1
+Uridine Triphosphate/metabolism	1
+Sialoglycoproteins/biosynthesis	1.31627e-309
+Thrombospondin 1	1.30779e-309
+Luminescent Proteins/genetics	1.32391e-309
+Forkhead Transcription Factors/genetics	1.29123e-309
+SKP Cullin F-Box Protein Ligases	1.36911e-309
+Mechanoreceptors	1.36848e-309
+Cardiac/chemistry	1
+SKP Cullin F-Box Protein Ligases/genetics	1.36869e-309
+Mechanoreceptors/physiology	1.36932e-309
+Karyopherins/metabolism	1
+Alanine/metabolism	1.94301e-309
+Globins	1.27765e-309
+Karyopherins	1.94364e-309
+Globins/metabolism	1
+STAT5 Transcription Factor/genetics	1.28805e-309
+Collagen Type XI/metabolism	1
+Aorta/injuries	1.3532e-309
+Coronary Vessels/injuries	1
+Cell Nucleus/physiology	1.32455e-309
+Octamer Transcription Factor-3/metabolism	1.3759e-309
+Platelet-Derived Growth Factor/biosynthesis	1
+NFI Transcription Factors/antagonists & inhibitors	1.36529e-309
+Forkhead Transcription Factors/metabolism	1.28932e-309
+Erythropoietin	1.29166e-309
+Erythrocytes	1.28657e-309
+Erythrocytes/cytology	1.28487e-309
+Globins/genetics	1.27787e-309
+Erythrocytes/physiology	1.28614e-309
+Serine	1.30842e-309
+Vinculin	1.29866e-309
+Talin/metabolism	1.2993e-309
+Talin	1.29909e-309
+Vinculin/genetics	1
+Cyclic GMP-Dependent Protein Kinases/antagonists & inhibitors	1.29824e-309
+Vinculin/metabolism	1
+Talin/genetics	1.29845e-309
+Nitroso Compounds/metabolism	1
+Heterogeneous-Nuclear Ribonucleoprotein Group A-B/physiology	1
+Molecular Chaperones/genetics	1.28678e-309
+Molecular Chaperones/metabolism	1.28529e-309
+Molecular Chaperones	1.28381e-309
+Nitric Oxide/toxicity	1.34174e-309
+Proto-Oncogene Proteins c-raf/physiology	1.35001e-309
+Serine/metabolism	1.32519e-309
+Urinary Calculi/metabolism	1.31691e-309
+Urinary Calculi	1.31712e-309
+Sialoglycoproteins/physiology	1
+Hypoglycemic Agents/chemistry	1
+Blood Proteins/genetics	1
+tax/physiology	1
+tax	1.34153e-309
+Mitosis	1.31309e-309
+bcr-abl/physiology	1
+Fetus/metabolism	1.2768e-309
+Follicular/genetics	1
+Follicular	1.35829e-309
+Glycoproteins/analysis	1
+Proximal/chemistry	1.31458e-309
+Inbred BB	1.31415e-309
+Cyclin G2	1.32349e-309
+Glucose Transporter Type 3	1.33092e-309
+Cyclin-Dependent Kinase Inhibitor p21/physiology	1.36084e-309
+ADP-Ribosylation Factor 1	1
+ADP-Ribosylation Factor 1/genetics	1.36041e-309
+ADP-Ribosylation Factor 1/physiology	1.3602e-309
+Fibrosarcoma/pathology	1
+Tumor Suppressor Protein p53/chemistry	1.36466e-309
+Homeodomain Proteins/antagonists & inhibitors	1
+Thrombospondin 1/physiology	1.33134e-309
+Myocardial Infarction/pathology	1.33261e-309
+Thrombospondin 1/analysis	1
+Regeneration/immunology	1
+Interstitial/physiopathology	1
+Kidney Tubules/chemistry	3.4634e-310
+Ureteral Obstruction	1.09603522873422e-319
+Kidney Glomerulus/chemistry	1.93431e-309
+Immediate-Early Proteins/antagonists & inhibitors	1
+Fibronectins/biosynthesis	1.33537e-309
+Ureteral Obstruction/physiopathology	2.33733000000002e-310
+Nuclear Localization Signals	1.36826e-309
+alpha Karyopherins/metabolism	1.36784e-309
+alpha Karyopherins	1.36805e-309
+Erythropoiesis/physiology	1.28466e-309
+Erythropoiesis	1.27723e-309
+Multiprotein Complexes/genetics	1.33452e-309
+Basic Helix-Loop-Helix Transcription Factors/biosynthesis	1.33431e-309
+Liver/embryology	1.28105e-309
+Liver/pathology	1.28211e-309
+Amides/pharmacology	1.31543e-309
+Amides	1.31585e-309
+Blood Proteins/drug effects	1.33771e-309
+Retinoblastoma-Like Protein p130	1.33749e-309
+Theoretical	1.34789e-309
+Risk	1.34916e-309
+Biopterin	1.34832e-309
+Biopterin/analogs & derivatives	1.34853e-309
+Nuts	1.34938e-309
+Peroxynitrous Acid/chemistry	1.34895e-309
+Biopterin/chemistry	1
+Coronary Disease/pathology	1.34874e-309
+Sodium Nitrite/pharmacology	1.31267e-309
+Sodium Nitrite	1.31288e-309
+Octamer Transcription Factors/genetics	1.35787e-309
+Octamer Transcription Factor-1/metabolism	1.35765e-309
+Octamer Transcription Factor-1/genetics	1
+Pair 18	1
+Sialoglycoproteins/analysis	1
+Alcoholic	1
+Alcoholic/pathology	1.32222e-309
+Lipopolysaccharides/blood	1
+Neutrophil Infiltration	1.32285e-309
+Hemorheology	1.34492e-309
+Vascular/injuries	1.34513e-309
+Arteriosclerosis/enzymology	1
+Substrate Specificity/drug effects	1.93452e-309
+Point Mutation/genetics	1.93473e-309
+Myocardial Reperfusion Injury/prevention & control	1.93643e-309
+Myocardial Ischemia/pathology	1
+Myocardial Reperfusion Injury	1.93728e-309
+Atrial Natriuretic Factor/deficiency	1
+Polysaccharides/pharmacology	1.93876e-309
+Myocardial Reperfusion Injury/pathology	1.93855e-309
+Evans Blue	1.9377e-309
+Myocardial Ischemia/prevention & control	1.93812e-309
+P-Selectin/biosynthesis	1.93685e-309
+Atrial Natriuretic Factor/analysis	1.93791e-309
+Antibody	1.93749e-309
+Guanylate Cyclase/deficiency	1.93834e-309
+Skeletal Muscle/metabolism	1.33007e-309
+Satellite Cells	1.33049e-309
+Skeletal Muscle/ultrastructure	1.32985e-309
+Skeletal Muscle	1.32964e-309
+Testosterone/analogs & derivatives	1.33028e-309
+Thrombospondin 1/drug effects	1
+Monoclonal/diagnostic use	1.34301e-309
+Proto-Oncogene Proteins c-bcl-2/drug effects	1.35723e-309
+Afferent/cytology	1.35277e-309
+Vero Cells	1
+Cysteine Endopeptidases/physiology	1.32497e-309
+Multienzyme Complexes/physiology	1
+Intracellular Signaling Peptides and Proteins/pharmacology	1.33665e-309
+Integrin alpha5	1.94194e-309
+Transformation	1.94216e-309
+Metalloendopeptidases/pharmacology	1
+Bone Morphogenetic Protein 1	1
+Inhibins/pharmacology	1.94237e-309
+Gastric Mucosa/growth & development	1
+Gastric Mucosa/chemistry	1.36508e-309
+Bystander Effect	1.37123e-309
+Fluorouracil/analogs & derivatives	1
+Thymidylate Synthase	1.37081e-309
+Thymidylate Synthase/metabolism	1.37102e-309
+Sulfides	1.31033e-309
+Cytochrome P-450 CYP2E1	1.30991e-309
+Prostaglandins E	1.3097e-309
+Allyl Compounds	1
+Sulfides/pharmacology	1.31012e-309
+Cytochrome P-450 CYP2E1/metabolism	1
+Ethanol/pharmacology	1.31118e-309
+Cytochrome P-450 CYP2E1/antagonists & inhibitors	1.31161e-309
+Prostaglandins E/biosynthesis	1.31097e-309
+Allyl Compounds/pharmacology	1.31076e-309
+Cyclin-Dependent Kinase Inhibitor p27/biosynthesis	1
+Hepatocyte Nuclear Factor 3-alpha/physiology	1
+Prostatic Neoplasms/secretion	1.3307e-309
+Urethane/pharmacology	1
+Non-Small-Cell Lung/chemically induced	1.3428e-309
+Cyclin-Dependent Kinase Inhibitor p27/metabolism	1.34259e-309
+Cyclin-Dependent Kinase Inhibitor p27/genetics	1
+Cyclin-Dependent Kinase Inhibitor p27/deficiency	1.34195e-309
+Corneal	1.93622e-309
+Corneal/metabolism	1.93558e-309
+Corneal/drug effects	1.93579e-309
+Corneal/cytology	1.936e-309
+Periodontal Ligament/metabolism	1
+Osteopontin/metabolism	1.31755e-309
+Focal Adhesion Protein-Tyrosine Kinases/metabolism	1.31818e-309
+rho-Associated Kinases/metabolism	1.31776e-309
+Neural Cell Adhesion Molecule L1/physiology	1
+Glioblastoma/genetics	1
+Oncogene Proteins v-erbB	1
+Neural Cell Adhesion Molecule L1/biosynthesis	1.37505e-309
+Oncogene Proteins v-erbB/antagonists & inhibitors	1.37463e-309
+Neural Cell Adhesion Molecule L1/antagonists & inhibitors	1
+Immunologic/antagonists & inhibitors	1.37399e-309
+Insulin-Like Growth Factor Binding Protein 1/genetics	1.9464e-309
+Forkhead Transcription Factors/classification	1.94619e-309
+Endothelium/enzymology	1.34704e-309
+Estrone/analogs & derivatives	1.34662e-309
+Estrone/pharmacology	1.34641e-309
+Estrone	1
+Transitional Cell/metabolism	1
+Testicular Neoplasms/metabolism	1
+Transitional Cell	1.36168e-309
+GATA1 Transcription Factor/physiology	1
+Thrombospondin 1/secretion	1.33155e-309
+Hydroxyprostaglandin Dehydrogenases/genetics	1.35935e-309
+Hydroxyprostaglandin Dehydrogenases	1.35956e-309
+Cyclin-Dependent Kinase Inhibitor p21/biosynthesis	1
+Small Ubiquitin-Related Modifier Proteins/metabolism	1.36338e-309
+bcl-2-Associated X Protein/genetics	1.94407e-309
+bcl-2-Associated X Protein/biosynthesis	1.9447e-309
+Missense	1
+Apoptosis Regulatory Proteins/biosynthesis	1.94449e-309
+Serine/genetics	1.94428e-309
+Androgen/biosynthesis	1.32922e-309
+Androgen/chemistry	1.32943e-309
+Mitochondria/genetics	1.33367e-309
+Oxygen/administration & dosage	1.94492e-309
+Leydig Cells	1.94576e-309
+Leydig Cells/chemistry	1.94513e-309
+Leydig Cells/metabolism	1.94534e-309
+Selenoprotein P	1.94555e-309
+Cyclic AMP/administration & dosage	1
+Platelet Activation/drug effects	1.94025e-309
+Catechin/pharmacokinetics	1.93961e-309
+Platelet Glycoprotein GPIIb-IIIa Complex/immunology	1
+Blood Coagulation Tests	1.93919e-309
+Cacao	1.94003e-309
+Catechin/blood	1
+Platelet Glycoprotein GPIIb-IIIa Complex/analysis	1
+Platelet Activation	1
+Cross-Over Studies	1.93897e-309
+Platelet Glycoprotein GPIIb-IIIa Complex	1.93982e-309
+Kidney Medulla/metabolism	1.34577e-309
+Guanylate Cyclase/genetics	1.34556e-309
+Kidney Medulla/enzymology	1
+Kidney Medulla/cytology	1
+Bullous	1
+Pemphigoid	1.94873e-309
+Bullous/immunology	1.9481e-309
+Non-Fibrillar Collagens	1
+Antennapedia Homeodomain Protein	1.94852e-309
+Autoantigens/genetics	1.94831e-309
+Chromatin/genetics	1
+Homeostasis/genetics	1.94704e-309
+Melanoma/pathology	1.35383e-309
+Melanocytes/enzymology	1
+Erythroid Precursor Cells/cytology	1.35192e-309
+Erythroid Precursor Cells/drug effects	1
+Globins/biosynthesis	1.28084e-309
+B-Lymphocytes/pathology	1.35702e-309
+B-Cell/drug therapy	1.3568e-309
+Acyltransferases/antagonists & inhibitors	1
+Myocarditis/etiology	1.31946e-309
+Aldosterone/blood	1.32031e-309
+Myocarditis	1.31967e-309
+Hyperaldosteronism/metabolism	1.31903e-309
+Myocarditis/ultrasonography	1.32009e-309
+Hyperaldosteronism/complications	1.32052e-309
+Myocarditis/metabolism	1
+Cardiomegaly/ultrasonography	1
+Hyperaldosteronism/chemically induced	1.31988e-309
+Erythropoietin/metabolism	1.29145e-309
+Stem Cell Factor/metabolism	1
+STAT5 Transcription Factor/metabolism	1
+Transcription Factor TFIIH	1.3271e-309
+Positive Transcriptional Elongation Factor B/metabolism	1.32646e-309
+Fenfluramine/analogs & derivatives	1.32688e-309
+Fenfluramine	1.32667e-309
+Fenfluramine/metabolism	1.32731e-309
+Anoikis	1.33325e-309
+Serpins/chemistry	1.33346e-309
+Hydroxymethylglutaryl-CoA Synthase/metabolism	1.33389e-309
+Human/metabolism	1.33643e-309
+Lymphoma/prevention & control	1.3411e-309
+S-Phase Kinase-Associated Proteins/genetics	1.34068e-309
+S-Phase Kinase-Associated Proteins/metabolism	1
+Muscle Cells/enzymology	1
+Muscular Atrophy/etiology	1
+Phytohemagglutinins	1.37314e-309
+Interleukin-2/immunology	1.37336e-309
+Phytohemagglutinins/pharmacology	1
+Cytotoxic/immunology	1.37293e-309
+Interleukin-2/deficiency	1.37208e-309
+Cytotoxic	1
+Cytotoxic/metabolism	1.37229e-309
+Cytotoxic/cytology	1.37272e-309
+Cytotoxic/drug effects	1.37378e-309
+Protein-Arginine N-Methyltransferases	1.95022e-309
+Protein-Arginine N-Methyltransferases/metabolism	1
+Fumonisins	1.35871e-309
+Fumonisins/pharmacology	1.35893e-309
+Trachea/physiology	1
+Trinucleotide Repeats	1.32582e-309
+Hydroxyprostaglandin Dehydrogenases/metabolism	1.35977e-309
+Cytoskeleton/pathology	1.33728e-309
+Cell Division/radiation effects	1.36402e-309
+EphA4/genetics	1
+EphA4	1
+Hu Paraneoplastic Encephalomyelitis Antigens	1.36678e-309
+Heterogeneous-Nuclear Ribonucleoprotein K/metabolism	1
+Biotin/chemistry	1.36635e-309
+Heterotrimeric GTP-Binding Proteins/metabolism	1
+Doxorubicin/metabolism	1.33304e-309
+Fatty Liver/etiology	1.36423e-309
+Fatty Liver/physiopathology	1
+Oxidoreductases/antagonists & inhibitors	1
+Proto-Oncogene Proteins c-bcl-2/analysis	1
+Cholestenone 5 alpha-Reductase	1.33877e-309
+Cardiovascular Diseases/prevention & control	1.31521e-309
+Proto-Oncogene Protein c-ets-1/biosynthesis	1.33516e-309
+Tunica Intima/physiology	1.35256e-309
+Tunica Intima/cytology	1
+Sodium Selenite/administration & dosage	1.36253e-309
+Interleukin-1/administration & dosage	1.36211e-309
+Cytokines/administration & dosage	1.36275e-309
+Lipid Peroxidation/drug effects	1.3619e-309
+Unsaturated/administration & dosage	1.36232e-309
+Acetaldehyde/pharmacology	1.31224e-309
+Acetaldehyde	1.31245e-309
+Microdissection	1.35065e-309
+MAP Kinase Kinase 1/metabolism	1.35107e-309
+Angiogenic Proteins/biosynthesis	1.35023e-309
+MAP Kinase Kinase 2	1.35171e-309
+Angiogenic Proteins/genetics	1.35044e-309
+Angiogenic Proteins	1
+MAP Kinase Kinase 2/metabolism	1.35129e-309
+Platelet-Derived Growth Factor/physiology	1
+Platelet-Derived Growth Factor/chemistry	1.35659e-309
+Hydroxymercuribenzoates	1.37675e-309
+Pyridoxal Phosphate/pharmacology	1.93303e-309
+Pyridoxal Phosphate	1.37696e-309
+Hydroxymercuribenzoates/pharmacology	1.93282e-309
+Keratins/analysis	1.36296e-309
+Neuropilin-1/biosynthesis	1
+Sialyltransferases/biosynthesis	1.31394e-309
+DNA Helicases	1.35617e-309
+Cyclic/metabolism	1.35405e-309
+Carbamoyl-Phosphate Synthase (Glutamine-Hydrolyzing)	1.35489e-309
+Protein Methyltransferases/metabolism	1.35553e-309
+Aspartate Carbamoyltransferase/metabolism	1
+Aspartate Carbamoyltransferase	1.35426e-309
+Non-Histone/metabolism	1.35574e-309
+Protein Methyltransferases/genetics	1
+Carbamoyl-Phosphate Synthase (Glutamine-Hydrolyzing)/metabolism	1.35447e-309
+Aspartate Carbamoyltransferase/genetics	1.35468e-309
+Carbamoyl-Phosphate Synthase (Glutamine-Hydrolyzing)/genetics	1.35596e-309
+Mutagens/pharmacology	1.3358e-309
+DNA Fragmentation/genetics	1.33601e-309
+Mutagens	1.33558e-309
+JNK Mitogen-Activated Protein Kinases/drug effects	1.33283e-309
+Protein Kinase Inhibitors/metabolism	1.36699e-309
+Lethal/genetics	1.27638e-309
+Yolk Sac/embryology	1.27744e-309
+Erythrocyte Membrane	1
+Anemia/genetics	1.28041e-309
+Erythrocyte Membrane/genetics	1
+Anemia/pathology	1.27596e-309
+Yolk Sac	1.27532e-309
+Erythropoiesis/genetics	1.28169e-309
+Lethal	1.27808e-309
+Anemia/metabolism	1
+Chromatin Immunoprecipitation/methods	1.28147e-309
+Erythrocyte Membrane/metabolism	1
+Anemia	1.27956e-309
+Yolk Sac/pathology	1
+Fetus/pathology	1.27659e-309
+Hormonal/metabolism	1
+Tamoxifen/metabolism	1.28551e-309
+Adipogenesis/physiology	1.94767e-309
+Hematopoiesis/physiology	1.94789e-309
+Erythrocytes/enzymology	1.94937e-309
+Transcriptional Elongation Factors	1.36105e-309
+Teratocarcinoma/genetics	1.3706e-309
+Teratocarcinoma/metabolism	1.37038e-309
+Abdominal/etiology	1
+Chemokine CCL2/physiology	1.32137e-309
+Abdominal/therapy	1.32115e-309
+Arteriosclerosis/therapy	1.32094e-309
+Aorta/immunology	1.33474e-309
+Kidney Calculi/prevention & control	1.322e-309
+Kidney Calculi	1.32158e-309
+Kidney Calculi/etiology	1.32179e-309
+Aclarubicin	1.33707e-309
+Aclarubicin/pharmacology	1.33686e-309
+Sulfur/deficiency	1.94958e-309
+Sulfur	1.9498e-309
+Melanoma/blood supply	1.93537e-309
+Pathologic/enzymology	1.93494e-309
+Skin Neoplasms/blood supply	1
+Kidney/blood supply	1
+Homeodomain Proteins/analysis	1.36741e-309
+Muscle Proteins/analysis	1.36763e-309
+Aorta/physiopathology	1.3498e-309
+Anticholesteremic Agents/therapeutic use	1
+Atrophy	1
+SKP Cullin F-Box Protein Ligases/metabolism	1.94173e-309
+Insulin-Like Growth Factor Binding Protein 1/biosynthesis	1.94661e-309
