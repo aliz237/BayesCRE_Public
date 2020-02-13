@@ -95,7 +95,7 @@ hypFile         = opt$tophyp
 outMeSHAppFile  = opt$outmeshapp
 
 
-setwd('./') ## Change this as appropriate
+setwd('./')
 source('./algorithms.R')
 
 ## Generaing the contex network
@@ -133,6 +133,10 @@ p.p = up.mRNA / total.mRNA
 print('Estimate of the background probabilities:')
 print(c(p.m, p.z, p.p))
 
+## for C++ use
+## order matters here! see Probs.cpp
+cat(p.c, p.a, h.z, alpha, beta, w, c.p, p.m, p.p, p.z, file="./probs.txt", sep="\n")
+
 ## Unique relations
 rels.unique = rels[!duplicated(rels[,c(2,3)]),]
 #rels.unique = rels[match(unique(rels[,1]), rels[,1]), ]
@@ -140,169 +144,193 @@ rels.unique = rels[!duplicated(rels[,c(2,3)]),]
 LOG_CHAIN = FALSE
 hyps.ind = {}
 up.down.pred = {}
-for(iter in 1:iter.num){
-  print(paste('Running the Gibbs Sampler. Iteration', iter))
-  
-  tt <- system.time(R <- mclapply(1:chain.num, gibbsSampler, sim.num = N, 
-                                  burn.in = burn.in, iter.num = iter, p.c = p.c, 
-                                  p.a = p.a, p.m = p.m, p.z = p.z, p.p = p.p, h.z = h.z, c.p = c.p, 
-                                  alpha = alpha, beta = beta, w = w, hyps.ind = hyps.ind))
-  
-  print(paste('Gibbs sampler run time:', tt[1]))
-  
-  print('Generating marginal probabilities')
-  marg.probs.pc = matrix(0, nrow = dim(R[1][[1]][[1]])[1], ncol = 3)
-  for(ch in 1:chain.num){
-    marg.probs.pc = marg.probs.pc + apply(R[ch][[1]][[1]][,2:4],2,as.numeric)
-  }
-  
-  marg.probs.pc = marg.probs.pc / chain.num
-  marg.probs.pc = data.frame(cbind(R[1][[1]][[1]][,1], marg.probs.pc), stringsAsFactors = F)
-  colnames(marg.probs.pc) = c('uid', 'prob_down', 'prob_zero', 'prob_up')
-  
-  ## Applicable edges
-  print(paste('Determining applicable edges for iteration', iter))
-  marg.probs.a = matrix(0, nrow = dim(R[1][[1]][[3]])[1], ncol = 2)
-  for(ch in 1:chain.num){
-    marg.probs.a = marg.probs.a + as.numeric(R[ch][[1]][[3]][,2:3])
-  }
-  
-  marg.probs.a = marg.probs.a / chain.num
-  marg.probs.a = data.frame(cbind(R[1][[1]][[3]][,1], marg.probs.a), stringsAsFactors = F)
-  colnames(marg.probs.a) = c('uid', 'prob_zero', 'prob_one')
-  App.edge = merge(rels, marg.probs.a, by.x = 7, by.y = 1)[,c(2,3,4,5,6,1,7,12,13)]
- 
-  ## write the top MeSH file
-  print(paste('Determining MeSH terms for iteration', iter))
-  marg.probs.m = matrix(0, nrow = dim(R[1][[1]][[2]])[1], ncol = 2)
-  for(ch in 1:chain.num){
-    marg.probs.m = marg.probs.m + as.numeric(R[ch][[1]][[2]][,2:3])
-  }
-  
-  marg.probs.m = marg.probs.m / chain.num
-  marg.probs.m = data.frame(cbind(R[1][[1]][[2]][,1], marg.probs.m), stringsAsFactors = F)
-  colnames(marg.probs.m) = c('uid', 'prob_zero', 'prob_one')
-  sig.MeSH = merge(ents, marg.probs.m, by.x = 1, by.y = 1)
-  
-  App.MeSH = merge(App.edge, sig.MeSH, by.x = 7, by.y = 1)[,c(2,3,4,5,6,7,9,10, 14)]
 
-  ## Add gene values
-  colnames(App.MeSH) = c('uid','srcuid','trguid', 'type','pmids','appid', 'edge_prob','MeSH','MeSH_prob')
-  App.MeSH = merge(App.MeSH, evidence, by.x = 3, by.y = 1, all.x=T)[,c(2,3,1,10,4,6,7,8,9,5)]
-  App.MeSH$val[is.na(App.MeSH$val)] = 0
+iter = 1
+fix.nonzero.MeSH.ind = which(ents[,2] == 'nonzeroMeSH')
+pcma.ind = which(ents[,'type'] %in% c('Protein', 'Compound', 'MeSH', 'Applicability'))
+pcma.ind = pcma.ind[-which(pcma.ind == fix.nonzero.MeSH.ind)]
+pc.ind   = which(ents[,'type'] %in% c('Protein', 'Compound'))
+ma.ind   = which(ents[,'type'] %in% c('MeSH', 'Applicability'))
+ma.ind   = ma.ind[-which(ma.ind == fix.nonzero.MeSH.ind)]
+m.ind    = which(ents[,'type'] == 'MeSH')
+m.ind    = m.ind[-which(m.ind == fix.nonzero.MeSH.ind)]
+a.ind    = which(ents[,'type'] == 'Applicability')
+rels[,"type"] = ifelse(rels[,"type"] == 'increase', 1, -1)
+rels[,"type_srcind"] = rels[,"type"] * as.double(rels[,"srcind"])
 
-  ## Add srcname and trgname
-  tmp.frame = merge(App.MeSH, ents.all, by.x = 2, by.y = 1)
-  App.MeSH = merge(tmp.frame, ents.all, by.x = 3, by.y = 1)[,c(3,2,1,11,13,14,16,4,5,6,7,8,9,10)]
-  colnames(App.MeSH) = c('uid','srcuid','trguid','srcname','srctype','trgname','trgtype','trgval', 
-                         'type','appid', 'edge_prob','MeSH','MeSH_prob', 'pmids')
-  ## Add nls
-  App.MeSH = merge(App.MeSH, rels.all, by.x = 1, by.y = 1)[,c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,19)]
-  colnames(App.MeSH) = c('uid','srcuid','trguid','srcname','srctype','trgname','trgtype','trgval', 
-                         'type','appid', 'edge_prob','MeSH','MeSH_prob', 'pmids', 'nls')
-  
-  ## sort by src id
-  ind = sort(as.character(App.MeSH[,2]), index.return = T)$ix
-  App.MeSH.sort = App.MeSH[ind,]
-  rownames(App.MeSH.sort) = 1:dim(App.MeSH.sort)[1]
-  
-  iter.MeSHAppFile = paste(dirname(outMeSHAppFile), '/iteration_', iter, '_', basename(outMeSHAppFile), sep = '')
-  write.table(App.MeSH.sort, iter.MeSHAppFile, row.names = F, sep = '\t', quote = F)
-  
-  select.down.ind1 = which(as.numeric(marg.probs.pc[,2]) >= cutoff.h )
-  select.down.ind2 = which(as.numeric(marg.probs.pc[select.down.ind1,2]) - 
-                             as.numeric(marg.probs.pc[select.down.ind1,3]) > 0 )
-  select.up.ind1 = which(as.numeric(marg.probs.pc[,4]) >= cutoff.h )
-  select.up.ind2 = which(as.numeric(marg.probs.pc[select.up.ind1,4]) - 
-                             as.numeric(marg.probs.pc[select.up.ind1,3]) > 0 )
-  select.sig.ind = unique(c(select.up.ind1[select.up.ind2], select.down.ind1[select.down.ind2]))
-  
-  sig.hyp = marg.probs.pc[select.sig.ind, , drop = F]
-  ITE = rep(paste('iter', iter, sep = ''), dim(sig.hyp)[1])
-  
-  colnames(sig.hyp)[1] = 'srcuid'
-  tmp.Tab = merge(sig.hyp, App.MeSH.sort, by.x = 1, by.y = 2)
-  colnames(sig.hyp)[1] = 'uid'
-  hyp.MeSH.list = data.frame(uid= character(0), MeSH=character(0))
-  for(hyp in unique(tmp.Tab$srcuid)){
-    hyp.MeSH = unique(tmp.Tab[tmp.Tab$srcuid == hyp,][,c('MeSH', 'MeSH_prob')])
-    sig.hype.MeSH = c(hyp.MeSH$MeSH[hyp.MeSH$MeSH_prob >= 0.5])
-    hyp.MeSH.list = rbind(hyp.MeSH.list, cbind(hyp, paste(sig.hype.MeSH, ' ', sep = ',',collapse='')))
-  }
-  
-  colnames(hyp.MeSH.list) = c('uid', 'MeSH')  
-  up.down.pred = rbind(up.down.pred, merge(cbind(sig.hyp, ITE), hyp.MeSH.list, by.x = 1, by.y = 1))
-  
-  m = merge(ents, up.down.pred, by.x = 1, by.y = 1)
-  hyps.id = m[,1]
-  hyps.ind = which(ents[,1] %in% hyps.id)
-  
-  ##### KZ: June 9, 2015: These will not be upadted in second iteration
-  rm.apps.id = unique(rels$appid[which(rels$srcuid %in% hyps.id)])
-  rm.apps.ind = which(ents[,1] %in% rm.apps.id)
-  ## May have to remove these if no other app is connected to them
-  rm.hyps.MeSH = unique(rels$meshid[which(rels$srcuid %in% hyps.id)]) 
-  rm.MeSH = rm.hyps.MeSH[which(!(rm.hyps.MeSH %in% rels$meshid[-which(rels$srcuid %in% hyps.id)]))]
-  if(length(rm.MeSH) > 0){
-    rm.MeSH.ind = which(ents$uid %in% rm.MeSH)
-    hyps.ind = c(hyps.ind, rm.apps.ind, rm.MeSH.ind)
-  }else{
-    hyps.ind = c(hyps.ind, rm.apps.ind)
-  }
-  ##### KZ: June 9, 2015: These will not be upadted in second iteration
-  
-  print(paste('Generating output of marginals for hypothesis for iteration', iter))
-  m = merge(ents, marg.probs.pc, by.x = 1, by.y = 1)
-  Tab = matrix(0, nrow = (dim(m)[1]*3), ncol = 10)
-  row.count = 1
- 
-  for(node in 1:dim(m)[1]){
-    L = nodeNet(m[node,1], ents, rels.unique, levels = F)
-    s.n = node.stat(-1, m[node,1], L$ents, L$rels, evidence)
-    E = c(uid = m[node,1], regulation = -1, name = m[node,2], id = m[node,3], type = m[node,4], 
-          prob = m[node,5], correct = s.n$c, 
-          incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
-    Tab[((node - 1) * 3 + 1), ] = t(as.matrix(E))
-    
-    s.n = list(c = 0,i = 0,z = 0)
-    E = c(uid = m[node,1], regulation = 0, name = m[node,2], id = m[node,3], type = m[node,4], 
-          prob = m[node,6],  correct = s.n$c, 
-          incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
-    Tab[((node - 1) * 3 + 2), ] = t(as.matrix(E))
-    
-    
-    s.n = node.stat(1, m[node,1], L$ents, L$rels, evidence)
-    E = c(uid = m[node,1], regulation = 1, name = m[node,2], id = m[node,3], type = m[node,4], 
-          prob = m[node,7],  correct = s.n$c, 
-          incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
-    Tab[((node - 1) * 3 + 3), ] = t(as.matrix(E))
-  }
-  
-  colnames(Tab) = c('uid', 'regulation', 'name', 'id', 'type', 'prob',  'correct', 'incorrect', 'zero', 'score')
-  rownames(Tab) = 1:dim(Tab)[1]
-  
-  iter.margFile = paste(dirname(margFile), '/iteration_', iter, '_', basename(margFile), sep = '')
-  write.table(Tab, iter.margFile, row.names = F, sep = '\t', quote = F)
-  
-  ## MeSH probabilities
-  MeSH.probs = unique(App.MeSH.sort[,c('MeSH', 'MeSH_prob')])
-  rownames(MeSH.probs) = 1:dim(MeSH.probs)[1]
-  iter.meshProbFile = paste(dirname(meshProbFile), '/iteration_', iter, '_', basename(meshProbFile), sep = '')
-  write.table(MeSH.probs, iter.meshProbFile, row.names = F, sep = '\t', quote = F)
-  
-  ## Put the original ids back and generate a uniqe relation network
-  plotNW = App.MeSH.sort[,c("uid", "srcuid", 'trguid', "srcname", "srctype", "trgname", "trgtype", "trgval", "type", 
-                   "pmids", "nls")]
-  plotNW = plotNW[!duplicated(plotNW), ]
-  plotNW$srcuid = id.map$uid.orig[match(plotNW$srcuid, id.map$uid.new)]
-  plotNW$trguid = id.map$uid.orig[match(plotNW$trguid, id.map$uid.new)]
-  
-  iter.plotNW = paste(dirname(hypFile), '/iteration_', iter, '_', 
-                      paste(gsub('.txt', '', gsub('hyp', '', basename(hypFile))), 'network.txt', sep = '_')
-                      , sep = '')
-  write.table(plotNW, iter.plotNW, row.names = F, sep = '\t', quote = F)
-    
+## save the rels data frame on file to be read by the cpp program.
+## uid and pmid columns are not needed for computations in gibbs sampling, so
+## are deleted. Index columns are decreased by 1, to match the cpp array indecies.
+## meshid and appid in rels are of type charachter, they are changed to numeric.
+
+rels_cpp <- subset(rels, select = -c(uid, pmids))
+rels_cpp[,"meshid"] <- as.double(rels[,"meshid"])
+rels_cpp[,"appid"] <- as.double(rels[,"appid"])
+rels_cpp[,"appind"] <- rels_cpp[,"appind"] - 1
+rels_cpp[,"meshind"] <- rels_cpp[,"meshind"] - 1
+rels_cpp[,"trgind"] <- rels_cpp[,"trgind"] - 1
+rels_cpp[,"srcind"] <- rels_cpp[,"srcind"] - 1
+rels_cpp[,"type_srcind"] <- rels_cpp[,"type"] * as.double(rels_cpp[,"srcind"])
+
+tryCatch({
+## rels will be read as long int in cpp and it's easier to read them with "\t" sep.
+## ents will be read as strings in cpp and it's easier to read them with ">" sep.
+write.table(rels_cpp, "./rels_file_cpp.txt", quote = F, sep = "\t", row.names = F, col.names = F)
+write.table(ents,"./ents_file_cpp.txt", quote = F, sep = ">", row.names = F, col.names = F)
+write.table(evidence, "./evidence_file_cpp.txt", quote = F, sep=">", row.names = F, col.names = F)
+dims <- c(length(unique(rels[,"srcuid"])), length(unique(rels[,"trguid"])), length(unique(rels[,"meshid"])), length(unique(rels[,"appid"])))
+write.table(dims, "./dims.txt", sep="\n", col.names = F, row.names = F)
+}, warn = function(w){
+  print(w)
+}, err = function(e){
+  print(e)
+})
+
+print("Simulation started in C++ ...")
+system("./main")
+
+# read the probabilities from the cpp output files
+marg.probs.pc <- read.table("./marg_prob_pc.txt")
+marg.probs.m  <-  read.table("./marg_prob_m.txt")
+marg.probs.a  <-  read.table("./marg_prob_a.txt")
+
+print('Generating marginal probabilities')
+marg.probs.pc = data.frame(ents[pc.ind,1], marg.probs.pc, stringsAsFactors = F)
+colnames(marg.probs.pc) = c('uid', 'prob_down', 'prob_zero', 'prob_up')
+
+## Applicable edges
+print(paste('Determining applicable edges for iteration', iter))
+marg.probs.a = data.frame(ents[a.ind,1], marg.probs.a, stringsAsFactors = F)
+colnames(marg.probs.a) = c('uid', 'prob_zero', 'prob_one')
+App.edge = merge(rels, marg.probs.a, by.x = 7, by.y = 1)[,c(2,3,4,5,6,1,7,12,13)]
+
+## write the top MeSH file
+print(paste('Determining MeSH terms for iteration', iter))
+marg.probs.m <- data.frame(ents[m.ind,1],marg.probs.m, stringsAsFactors = F)
+colnames(marg.probs.m) = c('uid', 'prob_zero', 'prob_one')
+#marg.probs.m[nrow(marg.probs.m)+1,] = list(ents[fix.nonzero.MeSH.ind,1],0,1)
+marg.probs.m <-  rbind(marg.probs.m, c(ents[fix.nonzero.MeSH.ind,1],0,1))
+sig.MeSH = merge(ents, marg.probs.m, by.x = 1, by.y = 1)
+
+App.MeSH = merge(App.edge, sig.MeSH, by.x = 7, by.y = 1)[,c(2,3,4,5,6,7,9,10, 14)]
+
+## Add gene values
+colnames(App.MeSH) = c('uid','srcuid','trguid', 'type','pmids','appid', 'edge_prob','MeSH','MeSH_prob')
+App.MeSH = merge(App.MeSH, evidence, by.x = 3, by.y = 1, all.x=T)[,c(2,3,1,10,4,6,7,8,9,5)]
+App.MeSH$val[is.na(App.MeSH$val)] = 0
+
+## Add srcname and trgname
+tmp.frame = merge(App.MeSH, ents.all, by.x = 2, by.y = 1)
+App.MeSH = merge(tmp.frame, ents.all, by.x = 3, by.y = 1)[,c(3,2,1,11,13,14,16,4,5,6,7,8,9,10)]
+colnames(App.MeSH) = c('uid','srcuid','trguid','srcname','srctype','trgname','trgtype','trgval', 
+                       'type','appid', 'edge_prob','MeSH','MeSH_prob', 'pmids')
+## Add nls
+App.MeSH = merge(App.MeSH, rels.all, by.x = 1, by.y = 1)[,c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,19)]
+colnames(App.MeSH) = c('uid','srcuid','trguid','srcname','srctype','trgname','trgtype','trgval', 
+                       'type','appid', 'edge_prob','MeSH','MeSH_prob', 'pmids', 'nls')
+
+## sort by src id
+ind = sort(as.character(App.MeSH[,2]), index.return = T)$ix
+App.MeSH.sort = App.MeSH[ind,]
+rownames(App.MeSH.sort) = 1:dim(App.MeSH.sort)[1]
+
+iter.MeSHAppFile = paste(dirname(outMeSHAppFile), '/iteration_', iter, '_', basename(outMeSHAppFile), sep = '')
+write.table(App.MeSH.sort, iter.MeSHAppFile, row.names = F, sep = '\t', quote = F)
+
+select.down.ind1 = which(as.numeric(marg.probs.pc[,2]) >= cutoff.h )
+select.down.ind2 = which(as.numeric(marg.probs.pc[select.down.ind1,2]) - 
+                           as.numeric(marg.probs.pc[select.down.ind1,3]) > 0 )
+select.up.ind1 = which(as.numeric(marg.probs.pc[,4]) >= cutoff.h )
+select.up.ind2 = which(as.numeric(marg.probs.pc[select.up.ind1,4]) - 
+                         as.numeric(marg.probs.pc[select.up.ind1,3]) > 0 )
+select.sig.ind = unique(c(select.up.ind1[select.up.ind2], select.down.ind1[select.down.ind2]))
+
+sig.hyp = marg.probs.pc[select.sig.ind, , drop = F]
+ITE = rep(paste('iter', iter, sep = ''), dim(sig.hyp)[1])
+
+colnames(sig.hyp)[1] = 'srcuid'
+tmp.Tab = merge(sig.hyp, App.MeSH.sort, by.x = 1, by.y = 2)
+colnames(sig.hyp)[1] = 'uid'
+hyp.MeSH.list = data.frame(uid= character(0), MeSH=character(0))
+for(hyp in unique(tmp.Tab$srcuid)){
+  hyp.MeSH = unique(tmp.Tab[tmp.Tab$srcuid == hyp,][,c('MeSH', 'MeSH_prob')])
+  sig.hype.MeSH = c(hyp.MeSH$MeSH[hyp.MeSH$MeSH_prob >= 0.5])
+  hyp.MeSH.list = rbind(hyp.MeSH.list, cbind(hyp, paste(sig.hype.MeSH, ' ', sep = ',',collapse='')))
 }
+
+colnames(hyp.MeSH.list) = c('uid', 'MeSH')  
+up.down.pred = rbind(up.down.pred, merge(cbind(sig.hyp, ITE), hyp.MeSH.list, by.x = 1, by.y = 1))
+
+m = merge(ents, up.down.pred, by.x = 1, by.y = 1)
+hyps.id = m[,1]
+hyps.ind = which(ents[,1] %in% hyps.id)
+
+##### KZ: June 9, 2015: These will not be upadted in second iteration
+rm.apps.id = unique(rels$appid[which(rels$srcuid %in% hyps.id)])
+rm.apps.ind = which(ents[,1] %in% rm.apps.id)
+## May have to remove these if no other app is connected to them
+rm.hyps.MeSH = unique(rels$meshid[which(rels$srcuid %in% hyps.id)]) 
+rm.MeSH = rm.hyps.MeSH[which(!(rm.hyps.MeSH %in% rels$meshid[-which(rels$srcuid %in% hyps.id)]))]
+if(length(rm.MeSH) > 0){
+  rm.MeSH.ind = which(ents$uid %in% rm.MeSH)
+  hyps.ind = c(hyps.ind, rm.apps.ind, rm.MeSH.ind)
+}else{
+  hyps.ind = c(hyps.ind, rm.apps.ind)
+}
+##### KZ: June 9, 2015: These will not be upadted in second iteration
+
+print(paste('Generating output of marginals for hypothesis for iteration', iter))
+m = merge(ents, marg.probs.pc, by.x = 1, by.y = 1)
+Tab = matrix(0, nrow = (dim(m)[1]*3), ncol = 10)
+row.count = 1
+
+for(node in 1:dim(m)[1]){
+  L = nodeNet(m[node,1], ents, rels.unique, levels = F)
+  s.n = node.stat(-1, m[node,1], L$ents, L$rels, evidence)
+  E = c(uid = m[node,1], regulation = -1, name = m[node,2], id = m[node,3], type = m[node,4], 
+        prob = m[node,5], correct = s.n$c, 
+        incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
+  Tab[((node - 1) * 3 + 1), ] = t(as.matrix(E))
+  
+  s.n = list(c = 0,i = 0,z = 0)
+  E = c(uid = m[node,1], regulation = 0, name = m[node,2], id = m[node,3], type = m[node,4], 
+        prob = m[node,6],  correct = s.n$c, 
+        incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
+  Tab[((node - 1) * 3 + 2), ] = t(as.matrix(E))
+  
+  
+  s.n = node.stat(1, m[node,1], L$ents, L$rels, evidence)
+  E = c(uid = m[node,1], regulation = 1, name = m[node,2], id = m[node,3], type = m[node,4], 
+        prob = m[node,7],  correct = s.n$c, 
+        incorrect = s.n$i, zero = s.n$z, score = (s.n$c - s.n$i))
+  Tab[((node - 1) * 3 + 3), ] = t(as.matrix(E))
+}
+
+colnames(Tab) = c('uid', 'regulation', 'name', 'id', 'type', 'prob',  'correct', 'incorrect', 'zero', 'score')
+rownames(Tab) = 1:dim(Tab)[1]
+
+iter.margFile = paste(dirname(margFile), '/iteration_', iter, '_', basename(margFile), sep = '')
+write.table(Tab, iter.margFile, row.names = F, sep = '\t', quote = F)
+
+## MeSH probabilities
+MeSH.probs = unique(App.MeSH.sort[,c('MeSH', 'MeSH_prob')])
+rownames(MeSH.probs) = 1:dim(MeSH.probs)[1]
+iter.meshProbFile = paste(dirname(meshProbFile), '/iteration_', iter, '_', basename(meshProbFile), sep = '')
+write.table(MeSH.probs, iter.meshProbFile, row.names = F, sep = '\t', quote = F)
+
+## Put the original ids back and generate a uniqe relation network
+plotNW = App.MeSH.sort[,c("uid", "srcuid", 'trguid', "srcname", "srctype", "trgname", "trgtype", "trgval", "type", 
+                          "pmids", "nls")]
+plotNW = plotNW[!duplicated(plotNW), ]
+plotNW$srcuid = id.map$uid.orig[match(plotNW$srcuid, id.map$uid.new)]
+plotNW$trguid = id.map$uid.orig[match(plotNW$trguid, id.map$uid.new)]
+
+iter.plotNW = paste(dirname(hypFile), '/iteration_', iter, '_', 
+                    paste(gsub('.txt', '', gsub('hyp', '', basename(hypFile))), 'network.txt', sep = '_')
+                    , sep = '')
+write.table(plotNW, iter.plotNW, row.names = F, sep = '\t', quote = F)
+
+
 
 
 print('Writing predicted up/down regulated hypothesis')
@@ -357,4 +385,3 @@ if(dim(m)[1] >= 1){
 }else{
   print('No Significant Hypothesis selected!')
 }
-

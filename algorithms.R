@@ -400,8 +400,8 @@ genContextGraph = function(ents.all.file, rels.all.file, evidence.file, MeSH.fil
   
   ## Adding the MeSH term nodes to the network
   names = unique(as.character(rels.top.MeSH[,6]))
-  ##uid = (max(as.numeric(ents.top.MeSH$uid)) + 1):(max(as.numeric(ents.top.MeSH$uid)) + length(names))
-  uid = paste('MeSHuid',1:length(names), sep = '')
+  uid = (max(as.numeric(ents.top.MeSH$uid)) + 1):(max(as.numeric(ents.top.MeSH$uid)) + length(names))
+  ##uid = paste('MeSHuid',1:length(names), sep = '')
   type = rep('MeSH', length(names))
   MeSH.data.frame = data.frame(cbind(uid = uid, name = names, id = names, type = type), stringsAsFactors = F)
   ents = rbind(ents.top.MeSH, MeSH.data.frame)
@@ -410,8 +410,8 @@ genContextGraph = function(ents.all.file, rels.all.file, evidence.file, MeSH.fil
   ## Adding the Applicability nodes to the network
   urels = unique(rels.top.MeSH[,2:3])
   names = paste(urels[,1], urels[,2], sep = '_')
-  uid = paste('APPuid',1:length(names), sep = '')
-  ##uid = (max(as.numeric(ents$uid)) + 1):(max(as.numeric(ents$uid)) + length(names))
+  ##uid = paste('APPuid',1:length(names), sep = '')
+  uid = (max(as.numeric(ents$uid)) + 1):(max(as.numeric(ents$uid)) + length(names))
   type = rep('Applicability', length(names))
   App.data.frame = data.frame(cbind(uid = uid, name = names, id = names, type = type), stringsAsFactors = F)
   ents = rbind(ents, App.data.frame)
