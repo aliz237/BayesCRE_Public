@@ -3,7 +3,6 @@
 #include <chrono>
 
 using namespace std :: chrono;
-using boost::math::binomial_coefficient;
 using std :: cout;
 using std :: ofstream;
 
@@ -15,8 +14,8 @@ const string EVIDENCE_FILE = "./evidence_file_cpp.txt";
 const string PROBS_FILE = "./probs.txt";
 const string DIM_FILE = "./dims.txt";
 //--------------------------------------------------------------------------------------------------------------
-constexpr Index N_ITR = 10000;
-constexpr Index BURN_IN = 5000;
+constexpr Index N_ITR = 2000000;
+constexpr Index BURN_IN = 200000;
 //--------------------------------------------------------------------------------------------------------------
 
 const Relation rels (RELS_FILE, DIM_FILE);
@@ -62,18 +61,6 @@ template<class V> void print(const V& v, std :: ostream& o=std :: cout)
     o << x <<"\n";
   // o << "\n";
 }
-
-std :: ostream& operator << (std :: ostream& o, const Matrix2d& m)
-{
-  for (size_t i=0; i<m.size1(); ++i)
-    {
-      for (size_t j=0; j<m.size2(); ++j)
-	o << m(i,j) << " ";
-
-      o << "\n";
-    }
-  return o;
-}
   
 //--------------------------------------------------------------------------------------------------------------
 
@@ -84,18 +71,13 @@ void init()
   Matrix2s entsmat;
   init_matrix(ENTS_FILE, entsmat);
 
-  // ents.uid = vector<Index>(ents.size1());
-  // Col1s id(ents, E_UID);
-  // transform(id, ents.uid, istoi);
-
   Col1s ents_uid(entsmat, E_UID);
   for (int j=0; j<ents_uid.size(); ++j)
-    ents.uid.push_back(std::stoi(ents_uid(j)));
+    ents.uid.push_back(std::stoi(ents_uid[j]));
   
   Col1s ents_names(entsmat, E_NAME);
   auto non0_mesh = [](const string& s){ return s == "nonzeroMeSH";};
   auto n0m = find_idx_if(ents_names, non0_mesh);
-
   
   Col1s ents_types(entsmat, E_TYPE);
   auto mesh = [](const string& s){ return s == "MeSH";};
@@ -366,19 +348,19 @@ public:
   ma_marginals (Index d1, const vector<Index>& idx) :
     v{idx}
   {
-    m = Zmatrix2d(d1, idx.size());
+    m = Matrix2d(d1, idx.size());
   }
   
   void update()
   {
-    for (Index i=0; i<m.size2(); ++i)
+    for (Index i=0; i<m.ncols(); ++i)
       X[v[i]] == 0 ? ++m(0,i) : ++m(1,i);
   }
 
   void write (const string& file)
   {
     std::ofstream fout(file);
-    Matrix2d tr = trans(m);
+    Matrix2d tr = transpose(m);
     tr *= 1.0 / N_ITR;
     fout << tr;
     fout.close();
@@ -395,7 +377,7 @@ public:
 
   void update()
   {
-    for (Index i=0; i<m.size2(); ++i)
+    for (Index i=0; i<m.ncols(); ++i)
 
       if (X[v[i]] == 0)
 	++m(1,i);
@@ -478,16 +460,18 @@ int main()
   return 0;
 }
 
+float choose (float n, float k){
+  return tgammal(n+1) / (tgammal(k+1) * tgammal(n-k+1));
+}
+
 std::pair<double, double> comb(int np, int nm, int k, int l, double pc){
 
     std::pair<double,double> res;
 
     int n = np + nm;
 
-    double x = binomial_coefficient<double>(np, k) *
-      binomial_coefficient<double>(nm, l) *
-      pow(1 - pc, k+l) *
-      pow(pc, n-k-l);
+    double x = choose(np, k) * choose(nm, l) *
+      pow(1 - pc, k+l) * pow(pc, n-k-l);
     double y = static_cast<double>(abs(k-l))/((k+l)*(k+l));
     res.first = x * k * y;
     res.second = x * l * y;

@@ -4,14 +4,11 @@
 #include <vector>
 #include <string>
 #include <set>
-
+#include <array>
 #include <fstream>
 #include <iostream>
-//#include <stdint.h>
-
-#include <boost/numeric/ublas/matrix.hpp>
-#include <boost/numeric/ublas/matrix_proxy.hpp>
-#include <boost/math/special_functions/binomial.hpp>
+#include <math.h>
+#include "matrix.h"
 
 /*---------------------------------------------------------------------------------------------------------*/
 
@@ -21,10 +18,9 @@ using std :: string;
 using std :: set;
 using std :: ifstream;
 
-typedef boost :: numeric :: ublas :: matrix<string,boost :: numeric :: ublas :: row_major, vector<string>> Matrix2s;
-typedef boost :: numeric :: ublas :: matrix<double> Matrix2d;
-typedef boost :: numeric :: ublas :: zero_matrix<double> Zmatrix2d;
-typedef boost :: numeric :: ublas :: matrix_column<Matrix2s> Col1s;
+typedef matrix<string> Matrix2s;
+typedef matrix<double> Matrix2d;
+typedef matrix_column<string> Col1s;
 typedef int Index; // only of sizeof(int) == 4
 
 /*---------------------------------------------------------------------------------------------------------*/

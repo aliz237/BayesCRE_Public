@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++14 -O2 -I boost_1_68_0/
+CXXFLAGS = -std=c++14 -O2
 
 main: fileio.o Relation.o Prob.o hash.o main.o
 	$(CXX) -o $@ $^ $(CXXFLAGS) 
