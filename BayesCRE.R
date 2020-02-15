@@ -187,7 +187,7 @@ write.table(dims, "./dims.txt", sep="\n", col.names = F, row.names = F)
 })
 
 print("Simulation started in C++ ...")
-system("./main")
+system(paste("./main", N, burn.in))
 
 # read the probabilities from the cpp output files
 marg.probs.pc <- read.table("./marg_prob_pc.txt")

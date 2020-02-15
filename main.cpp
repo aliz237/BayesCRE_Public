@@ -14,9 +14,6 @@ const string EVIDENCE_FILE = "./evidence_file_cpp.txt";
 const string PROBS_FILE = "./probs.txt";
 const string DIM_FILE = "./dims.txt";
 //--------------------------------------------------------------------------------------------------------------
-constexpr Index N_ITR = 2000000;
-constexpr Index BURN_IN = 200000;
-//--------------------------------------------------------------------------------------------------------------
 
 const Relation rels (RELS_FILE, DIM_FILE);
 const Prob     prb  (PROBS_FILE);
@@ -53,15 +50,6 @@ Hashtab relsByMeshId = rels.group_by(R_MESHID);
 // this is to disambiguate the call to the overloaded log function
 double (*dlog)(double) = std :: log;
 int sgn (int x) { return ((x > 0) - (x < 0));}
-//--------------------------------------------------------------------------------------------------------------
-
-template<class V> void print(const V& v, std :: ostream& o=std :: cout)
-{
-  for (const auto& x : v)
-    o << x <<"\n";
-  // o << "\n";
-}
-  
 //--------------------------------------------------------------------------------------------------------------
 
 void init()
@@ -343,10 +331,11 @@ class ma_marginals
 protected:
   Matrix2d m;
   const vector<Index>& v;
-  
+  const Index N_ITR;
 public:
-  ma_marginals (Index d1, const vector<Index>& idx) :
-    v{idx}
+  ma_marginals (Index d1, Index nitr, const vector<Index>& idx) :
+    v{idx},
+    N_ITR{nitr}
   {
     m = Matrix2d(d1, idx.size());
   }
@@ -372,8 +361,8 @@ class pc_marginals : public ma_marginals
   
 public:
   
-  pc_marginals (Index d1, const vector<Index>& idx) :
-    ma_marginals(d1,idx) {}
+  pc_marginals (Index d1, Index nitr, const vector<Index>& idx) :
+    ma_marginals(d1, nitr, idx) {}
 
   void update()
   {
@@ -390,15 +379,24 @@ public:
 
 //-----------------------------------------------------------------------------------------------------------------
 
-int main()
+int main(int argc, char **argv)
 {
-
 
   try
     {
       auto t1 = steady_clock :: now();
       init();
       
+      if (argc != 3){
+	cout << "Usage: main N_ITR BURN_IN \n"
+	  "N_ITER is the number of iterations, try 2 * 10 ^ 6. \n"
+	  "BURN_IN is the initial warmp up of the sampler, try 2 * 10 ^ 5\n.";
+	exit(0);
+      }
+
+      const Index N_ITR = std::stoi(argv[1]);
+      const Index BURN_IN = std::stoi(argv[2]);
+
       const Index e1 = BURN_IN + 1;
       const Index e2 = BURN_IN + N_ITR + 1;
 
@@ -407,9 +405,7 @@ int main()
 	{
 
 	  if (t%50000 == 0)
-	    {
-	      std::cout <<"Iteration: " << t << " / " << N_ITR <<"\n";
-	    }
+	    std::cout <<"Iteration:" << t << " / " << N_ITR <<"\n";
 
 	  update_pc_nodes (t);
 	  update_a_nodes  (t);
@@ -417,18 +413,16 @@ int main()
 	}
 
       std::cout <<"After Burn in ...\n";
-      // Marginal probabilities will be updated.
       
-      ma_marginals marg_m(2,ents.m_idx);
-      ma_marginals marg_a(2,ents.a_idx);
-      pc_marginals marg_pc(3,ents.pc_idx);
+      // Marginal probabilities will be updated.
+      ma_marginals marg_m (2, N_ITR, ents.m_idx);
+      ma_marginals marg_a (2, N_ITR, ents.a_idx);
+      pc_marginals marg_pc(3, N_ITR, ents.pc_idx);
       
       for(Index t=e1; t != e2; ++t)
 	{
 	  if (t%100000 == 0)
-	    {
 	      std::cout <<"Iteration: " << t << " / " << N_ITR <<"\n";
-	    }
 	  
 	  update_pc_nodes (t);
 	  marg_pc.update();
@@ -442,9 +436,9 @@ int main()
 	}
 
       auto t2 = steady_clock::now() - t1;
-      std::cout << "\nSimulation Time:"
-		  <<  duration_cast<seconds>(t2).count()
-		  << "(s)\n";
+      std::cout << "\nDone!\nSimulation Time:"
+		<<  duration_cast<seconds>(t2).count() <<"(s)"
+		<< "\nPost Processing in R ...\n\n";
 
       marg_pc.write("./marg_prob_pc.txt");
       marg_m.write("./marg_prob_m.txt");
