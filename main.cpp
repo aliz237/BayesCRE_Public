@@ -17,26 +17,11 @@ const string DIM_FILE = "./dims.txt";
 
 const Relation rels (RELS_FILE, DIM_FILE);
 const Prob     prb  (PROBS_FILE);
-
-const double Z_p[12] =
-  {
-    1 - 2 * prb.beta , prb.alpha         , prb.beta         , 1.0 / 3,
-    prb.beta         , 1 - 2 * prb.alpha , prb.beta         , 1.0 / 3,
-    prb.beta         , prb.alpha         , 1 - 2 * prb.beta , 1.0 / 3
-  };
-
-// this holds the computation of comp_prb_H and is used in comp_ch_p
-// not defining it globally here causes memory fragmentation
-// and slows the code dramatically
-double H_p[4];
-
 //--------------------------------------------------------------------------------------------------------------
 
 // to be initialized by init()
 Entry    ents;
 vector<Index> X;
-
-
 //--------------------------------------------------------------------------------------------------------------
 
 //initialize hash tables
@@ -44,7 +29,6 @@ Hashtab relsBySrcUid = rels.group_by(R_SRCUID);
 Hashtab relsByTrgUid = rels.group_by(R_TRGUID);
 Hashtab relsByAppId  = rels.group_by(R_APPID);
 Hashtab relsByMeshId = rels.group_by(R_MESHID);
-
 //--------------------------------------------------------------------------------------------------------------
 
 // this is to disambiguate the call to the overloaded log function
@@ -476,55 +460,57 @@ std::pair<double, double> comb(int np, int nm, int k, int l, double pc){
  * This function computes P(H | X)
  */
 
-void comp_prob_H(int nm, int np, double c){
-
-    int n = nm + np;
+array<double, 4> comp_prob_H(int nm, int np, double c){
+  array<double, 4> H_p;
+  int n = nm + np;
     
-    if ( n <= 0 )
-      {
-	H_p[0] = prb.pm;
-	H_p[1] = prb.pz;
-	H_p[2] = prb.pp;
-	H_p[3] = 0;
-	return;
-      }
+  if ( n <= 0 )
+    {
+      H_p[0] = prb.pm;
+      H_p[1] = prb.pz;
+      H_p[2] = prb.pp;
+      H_p[3] = 0;
+      return H_p;
+    }
 
-    double pcn = pow(c, n);
-    double phm = pcn * prb.pm;
-    double ph0 = pcn * prb.pz;
-    double php = pcn * prb.pp;
+  double pcn = pow(c, n);
+  double phm = pcn * prb.pm;
+  double ph0 = pcn * prb.pz;
+  double php = pcn * prb.pp;
 
-    if ( nm >= 1 )
-      phm += pow(c, np) - pcn;
+  if ( nm >= 1 )
+    phm += pow(c, np) - pcn;
     
-    if ( np >= 1 )
-      php += pow(c, nm) - pcn;
+  if ( np >= 1 )
+    php += pow(c, nm) - pcn;
     
-    double B = 0.0;
-    double C = 0.0;
+  double B = 0.0;
+  double C = 0.0;
     
-    if ( np >= 1 && nm >= 1 )
-      {
-	for (int k=1; k<=np; ++k)
-	  {
-	    for(int l=1; l<=nm; ++l)
-	      {
-		auto x = comb(np, nm, k, l, c);
-		B += x.first;
-		C += x.second;
-	      }
-	  }
-      }
+  if ( np >= 1 && nm >= 1 )
+    {
+      for (int k=1; k<=np; ++k)
+	{
+	  for(int l=1; l<=nm; ++l)
+	    {
+	      auto x = comb(np, nm, k, l, c);
+	      B += x.first;
+	      C += x.second;
+	    }
+	}
+    }
 
     
-    phm += C;
-    php += B;
-    double pha = (1 - ( pow(c, nm) + pow(c, np) - pcn )) - B - C;
+  phm += C;
+  php += B;
+  double pha = (1 - ( pow(c, nm) + pow(c, np) - pcn )) - B - C;
 
-    H_p[0] = phm;
-    H_p[1] = ph0;
-    H_p[2] = php;
-    H_p[3] = pha;
+  H_p[0] = phm;
+  H_p[1] = ph0;
+  H_p[2] = php;
+  H_p[3] = pha;
+
+  return H_p;
 }
   
 
@@ -533,14 +519,20 @@ void comp_prob_H(int nm, int np, double c){
  */
 
 double comp_ch_p(int nm, int np, double pac, int val){
- 
-    comp_prob_H(nm, np, pac * (1-abs(val)) + prb.pc * abs(val));
-    //return  inner_prod(Z_p, H_p);
-    int i = ++val << 2;
-    return
-      H_p[0] * Z_p[i] + H_p[1] * Z_p[i+1] + H_p[2] * Z_p[i+2] + H_p[3] * Z_p[i+3];
+  static const double Z_p[12] =
+    {
+      1 - 2 * prb.beta , prb.alpha         , prb.beta         , 1.0 / 3,
+      prb.beta         , 1 - 2 * prb.alpha , prb.beta         , 1.0 / 3,
+      prb.beta         , prb.alpha         , 1 - 2 * prb.beta , 1.0 / 3
+    };
+
+  array<double, 4> H_p = comp_prob_H(nm, np, pac * (1-abs(val)) + prb.pc * abs(val));
+  //return  inner_prod(Z_p, H_p);
+  int i = ++val << 2;
+  return
+    H_p[0] * Z_p[i] + H_p[1] * Z_p[i+1] + H_p[2] * Z_p[i+2] + H_p[3] * Z_p[i+3];
       
-  }
+}
 
 /*------------------------------------------------------------------------------------------*/
   

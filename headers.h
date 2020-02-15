@@ -151,7 +151,7 @@ void init_matrix(const string& name, Matrix2s& m);
  * These are the ... */
 void init();
 std::pair<double, double> comb(int np, int nm, int k, int l, double pc);
-void comp_prob_H(int nm, int np, double c);
+array<double, 4> comp_prob_H(int nm, int np, double c);
 void comp_pZ(int z);
 double comp_ch_p(int nm, int np, double pac, int val);
 std::pair<Index, Index> comp_nm_np(const vector<Index>& Val, const vector<Index>& pa_lab);
